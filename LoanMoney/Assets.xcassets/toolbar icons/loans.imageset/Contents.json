@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "loans.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "loans.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },

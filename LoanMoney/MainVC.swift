@@ -52,7 +52,7 @@ extension MainVC {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.itemSize.width = self.view.frame.width - 20
-        layout.itemSize.height = layout.itemSize.width
+        layout.itemSize.height = 170
         return layout
     }
     
@@ -66,7 +66,7 @@ extension MainVC {
 extension MainVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 15
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -97,7 +97,7 @@ extension MainVC {
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
         let loansButton = createBarButton(imageName: "loans", title: "Займы", selector: #selector(ProfileButtonTapped))
         let cardsButton = createBarButton(imageName: "cards", title: "Карты", selector: #selector(ProfileButtonTapped))
-        let calculatorButton = createBarButton(imageName: "calculator", title: "Калькулятор", selector: #selector(ProfileButtonTapped))
+        let calculatorButton = createBarButton(imageName: "calc", title: "Калькулятор", selector: #selector(ProfileButtonTapped))
         let infoButton = createBarButton(imageName: "info", title: "Инфо", selector: #selector(ProfileButtonTapped))
         let arr: [Any] = [flexibleSpace, loansButton, flexibleSpace, cardsButton, flexibleSpace, calculatorButton, flexibleSpace, infoButton, flexibleSpace]
         setToolbarItems(arr as? [UIBarButtonItem] ?? [UIBarButtonItem](), animated: true)
