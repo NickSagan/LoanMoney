@@ -25,7 +25,17 @@ class MainVC: UIViewController {
 
 extension MainVC {
     
-    
+    func createToolbar() {
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+        let loansButton = createBarButton(imageName: "loans", title: "Займы", selector: #selector(ProfileButtonTapped))
+        let cardsButton = createBarButton(imageName: "cards", title: "Карты", selector: #selector(ProfileButtonTapped))
+        let calculatorButton = createBarButton(imageName: "calculator", title: "Калькулятор", selector: #selector(ProfileButtonTapped))
+        let infoButton = createBarButton(imageName: "info", title: "Инфо", selector: #selector(ProfileButtonTapped))
+        let arr: [Any] = [flexibleSpace, loansButton, flexibleSpace, cardsButton, flexibleSpace, calculatorButton, flexibleSpace, infoButton, flexibleSpace]
+        setToolbarItems(arr as? [UIBarButtonItem] ?? [UIBarButtonItem](), animated: true)
+        navigationController?.setToolbarHidden(false, animated: false)
+    }
+
     func createBarButton(imageName: String, title: String, selector: Selector) -> UIBarButtonItem {
         let customButton: UIButton = UIButton(type: .custom)
         customButton.setImage((UIImage(named: imageName)), for: .normal)
