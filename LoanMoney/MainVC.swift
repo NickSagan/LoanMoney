@@ -8,10 +8,15 @@
 import UIKit
 
 class MainVC: UIViewController {
+    
+    private var refreshControl: UIRefreshControl!
+    private var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Займ"
+        
+        setupCollectionView()
         createToolbar()
     }
     
@@ -19,6 +24,69 @@ class MainVC: UIViewController {
         print("tapped")
     }
     
+}
+
+//MARK: - COLLECTION VIEW SETUP
+
+extension MainVC {
+    
+    func setupCollectionView() {
+        let view = UIView()
+        view.backgroundColor = .white
+        
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: setLayout())
+        collectionView?.dataSource = self
+        collectionView?.delegate = self
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+        collectionView?.backgroundColor = UIColor.white
+        
+        refreshControl = UIRefreshControl()
+        collectionView?.refreshControl = refreshControl
+        refreshControl?.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        
+        view.addSubview(collectionView!)
+        self.view = view
+    }
+    
+    func setLayout() -> UICollectionViewFlowLayout {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.itemSize.width = self.view.frame.width - 20
+        layout.itemSize.height = layout.itemSize.width
+        return layout
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        
+    }
+}
+
+//MARK: - UICollectionViewDataSource
+
+extension MainVC: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+       
+        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
+        let imageView = UIImageView(frame: CGRect(x:0, y:0, width: myCell.frame.size.width, height: myCell.frame.size.height))
+        imageView.backgroundColor = UIColor.systemGray
+        myCell.addSubview(imageView)
+  
+        return myCell
+    }
+}
+
+//MARK: - UICollectionViewDelegate
+
+extension MainVC: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let cell = collectionView.cellForItem(at: indexPath)
+    }
 }
 
 //MARK: - Toolbar & UIBarButtonItems
