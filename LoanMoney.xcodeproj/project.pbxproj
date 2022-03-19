@@ -15,6 +15,7 @@
 		91B370C227E4AADB00F5B4BE /* LoanMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370C127E4AADB00F5B4BE /* LoanMoneyTests.swift */; };
 		91B370CC27E4AADB00F5B4BE /* LoanMoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370CB27E4AADB00F5B4BE /* LoanMoneyUITests.swift */; };
 		91B370CE27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370CD27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift */; };
+		91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370DA27E64F4300F5B4BE /* LoanCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		91B370C727E4AADB00F5B4BE /* LoanMoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanMoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B370CB27E4AADB00F5B4BE /* LoanMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanMoneyUITests.swift; sourceTree = "<group>"; };
 		91B370CD27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanMoneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91B370DA27E64F4300F5B4BE /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				91B370B327E4AADA00F5B4BE /* Assets.xcassets */,
 				91B370B527E4AADA00F5B4BE /* LaunchScreen.storyboard */,
 				91B370B827E4AADA00F5B4BE /* Info.plist */,
+				91B370DA27E64F4300F5B4BE /* LoanCell.swift */,
 			);
 			path = LoanMoney;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				91B370AF27E4AAD200F5B4BE /* MainVC.swift in Sources */,
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
 				91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */,
+				91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
