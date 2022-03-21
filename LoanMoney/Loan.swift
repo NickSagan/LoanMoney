@@ -13,4 +13,5 @@ struct Loan {
     let blue: String
     let violet: String
     let yellow: String
+    let url: URL
 }
