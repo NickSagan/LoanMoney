@@ -77,7 +77,7 @@ extension MainVC: UICollectionViewDataSource {
         cell.underBlue.text = "от 1000\nдо 15 000"
         cell.underViolet.text = "от 5\nдо 21"
         cell.underYellow.text = "Первый займ\nпод 0%"
-        cell.logo.image = UIImage(named: "kolibri")
+        cell.logo.image = UIImage(named: "smsfinance")
 
         return cell
     }

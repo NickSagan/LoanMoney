@@ -25,6 +25,7 @@ class LoanCell: UICollectionViewCell {
     let percent: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Verdana", size: 18)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.frame.size.height = 100
         label.frame.size.width = 150
         label.textColor = .black
@@ -125,15 +126,16 @@ class LoanCell: UICollectionViewCell {
         }
         
         logo.snp.makeConstraints { make in
-            make.top.equalTo(background.snp.top).offset(10)
+            make.top.equalTo(background.snp.top).offset(20)
             make.left.equalTo(background.snp.left).offset(10)
             make.height.equalTo(background.snp.height).multipliedBy(0.2)
         }
         
         percent.snp.makeConstraints { make in
-            make.top.equalTo(background.snp.top).offset(10)
+            make.top.equalTo(background.snp.top).offset(20)
             make.height.equalTo(logo.snp.height)
             make.right.equalTo(background.snp.right).offset(-30)
+            make.left.greaterThanOrEqualTo(logo.snp.right).offset(40)
         }
         
         separator.snp.makeConstraints { make in
