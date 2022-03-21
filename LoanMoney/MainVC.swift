@@ -37,7 +37,7 @@ extension MainVC {
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: setLayout())
         collectionView?.dataSource = self
         collectionView?.delegate = self
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+        collectionView?.register(LoanCell.self, forCellWithReuseIdentifier: "cell")
         collectionView?.backgroundColor = UIColor.white
         
         refreshControl = UIRefreshControl()
@@ -52,7 +52,7 @@ extension MainVC {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.itemSize.width = self.view.frame.width - 20
-        layout.itemSize.height = 170
+        layout.itemSize.height = 200
         return layout
     }
     
@@ -71,12 +71,15 @@ extension MainVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
-        let imageView = UIImageView(frame: CGRect(x:0, y:0, width: myCell.frame.size.width, height: myCell.frame.size.height))
-        imageView.backgroundColor = UIColor.systemGray
-        myCell.addSubview(imageView)
-  
-        return myCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LoanCell
+
+        cell.percent.text = "под 1%"
+        cell.underBlue.text = "от 1000\nдо 15 000"
+        cell.underViolet.text = "от 5\nдо 21"
+        cell.underYellow.text = "Первый займ\nпод 0%"
+        cell.logo.image = UIImage(named: "kolibri")
+
+        return cell
     }
 }
 
@@ -102,6 +105,9 @@ extension MainVC {
         let arr: [Any] = [flexibleSpace, loansButton, flexibleSpace, cardsButton, flexibleSpace, calculatorButton, flexibleSpace, infoButton, flexibleSpace]
         setToolbarItems(arr as? [UIBarButtonItem] ?? [UIBarButtonItem](), animated: true)
         navigationController?.setToolbarHidden(false, animated: false)
+        navigationController?.toolbar.barTintColor = .white
+//        navigationController?.navigationBar.barTintColor = .white
+
     }
 
     func createBarButton(imageName: String, title: String, selector: Selector) -> UIBarButtonItem {
