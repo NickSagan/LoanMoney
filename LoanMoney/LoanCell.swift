@@ -18,15 +18,23 @@ class LoanCell: UICollectionViewCell {
     
     let logo: UIImageView = {
         let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
         return imgView
     }()
     
     let percent: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Verdana", size: 22)
+        label.font = UIFont(name: "Verdana", size: 18)
         label.frame.size.height = 100
         label.frame.size.width = 150
+        label.textColor = .black
         return label
+    }()
+    
+    let separator: UIImageView = {
+        let imgView = UIImageView()
+        imgView.image = UIImage(named: "separator")
+        return imgView
     }()
     
     let blueIcon: UIImageView = {
@@ -56,28 +64,30 @@ class LoanCell: UICollectionViewCell {
     let underBlue: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.font = UIFont(name: "Verdana", size: 12)
+        label.font = UIFont(name: "Verdana", size: 14)
+        label.textColor = .black
         return label
     }()
     
     let underViolet: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.font = UIFont(name: "Verdana", size: 12)
+        label.font = UIFont(name: "Verdana", size: 14)
+        label.textColor = .black
         return label
     }()
     
     let underYellow: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.font = UIFont(name: "Verdana", size: 12)
+        label.font = UIFont(name: "Verdana", size: 14)
+        label.textColor = .black
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
-        setConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -94,6 +104,7 @@ class LoanCell: UICollectionViewCell {
         background.addSubview(underBlue)
         background.addSubview(underViolet)
         background.addSubview(underYellow)
+        background.addSubview(separator)
         
         background.translatesAutoresizingMaskIntoConstraints = false
         logo.translatesAutoresizingMaskIntoConstraints = false
@@ -104,6 +115,7 @@ class LoanCell: UICollectionViewCell {
         underBlue.translatesAutoresizingMaskIntoConstraints = false
         underViolet.translatesAutoresizingMaskIntoConstraints = false
         underYellow.translatesAutoresizingMaskIntoConstraints = false
+        separator.translatesAutoresizingMaskIntoConstraints = false
         
         background.snp.makeConstraints { make in
             make.top.equalTo(self)
@@ -115,18 +127,50 @@ class LoanCell: UICollectionViewCell {
         logo.snp.makeConstraints { make in
             make.top.equalTo(background.snp.top).offset(10)
             make.left.equalTo(background.snp.left).offset(10)
-            make.height.equalTo(background.snp.height).multipliedBy(0.3)
+            make.height.equalTo(background.snp.height).multipliedBy(0.2)
         }
         
         percent.snp.makeConstraints { make in
             make.top.equalTo(background.snp.top).offset(10)
-            make.left.greaterThanOrEqualTo(logo.snp.right).offset(10).priority(100)
             make.height.equalTo(logo.snp.height)
-            make.right.equalTo(background.snp.right).offset(-10)
+            make.right.equalTo(background.snp.right).offset(-30)
         }
-    }
-    
-    func setConstraints() {
-
+        
+        separator.snp.makeConstraints { make in
+            make.top.equalTo(logo.snp.bottom).offset(15)
+            make.width.equalTo(background.snp.width).multipliedBy(0.8)
+            make.height.equalTo(2)
+            make.centerX.equalTo(background.snp.centerX)
+        }
+        
+        blueIcon.snp.makeConstraints { make in
+            make.top.equalTo(separator.snp.bottom).offset(15)
+            make.left.equalTo(background.snp.left).offset(40)
+        }
+        
+        underBlue.snp.makeConstraints { make in
+            make.top.equalTo(blueIcon.snp.bottom).offset(10)
+            make.left.equalTo(background.snp.left).offset(40)
+        }
+        
+        violetIcon.snp.makeConstraints { make in
+            make.top.equalTo(separator.snp.bottom).offset(15)
+            make.left.equalTo(blueIcon.snp.left).offset(100)
+        }
+        
+        underViolet.snp.makeConstraints { make in
+            make.top.equalTo(violetIcon.snp.bottom).offset(10)
+            make.left.equalTo(underBlue.snp.left).offset(100)
+        }
+        
+        yellowIcon.snp.makeConstraints { make in
+            make.top.equalTo(separator.snp.bottom).offset(15)
+            make.left.equalTo(violetIcon.snp.left).offset(100)
+        }
+        
+        underYellow.snp.makeConstraints { make in
+            make.top.equalTo(yellowIcon.snp.bottom).offset(10)
+            make.left.equalTo(underViolet.snp.left).offset(100)
+        }
     }
 }
