@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class LoansVC: UIViewController {
     
     private var refreshControl: UIRefreshControl!
     private var collectionView: UICollectionView!
@@ -29,7 +29,7 @@ class MainVC: UIViewController {
 
 //MARK: - COLLECTION VIEW SETUP
 
-extension MainVC {
+extension LoansVC {
     
     func setupCollectionView() {
         let view = UIView()
@@ -64,7 +64,7 @@ extension MainVC {
 
 //MARK: - UICollectionViewDataSource
 
-extension MainVC: UICollectionViewDataSource {
+extension LoansVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.loans.count
@@ -86,7 +86,7 @@ extension MainVC: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 
-extension MainVC: UICollectionViewDelegate {
+extension LoansVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         UIApplication.shared.open(data.loans[indexPath.row].url, options: [:])
@@ -95,7 +95,7 @@ extension MainVC: UICollectionViewDelegate {
 
 //MARK: - Toolbar & UIBarButtonItems
 
-extension MainVC {
+extension LoansVC {
     
     func createToolbar() {
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)

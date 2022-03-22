@@ -23,13 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            UserDefaults.standard.set(true, forKey: "notFirstLaunch")
 //            window?.rootViewController = OnboardVC()
 //        } else {
-//            let nc = UINavigationController(rootViewController: MainVC())
+//            let nc = UINavigationController(rootViewController: LoansVC())
 //            nc.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(0)
 //            nc.navigationBar.tintColor = .white
 //            window?.rootViewController = nc
 //        }
         
-        let nc = UINavigationController(rootViewController: MainVC())
+        let nc = UINavigationController(rootViewController: LoansVC())
         nc.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(0)
         nc.navigationBar.tintColor = .white
         window?.rootViewController = nc
