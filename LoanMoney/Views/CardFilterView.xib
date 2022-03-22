@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="cardsButton" destination="Efa-NM-pvx" id="I37-zd-uFQ"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="Qjs-hk-AlA"/>
+                <outlet property="segmentedControl" destination="peU-6x-CSD" id="Qb3-41-juw"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -33,9 +34,6 @@
                             </fragment>
                         </attributedString>
                     </buttonConfiguration>
-                    <connections>
-                        <action selector="cardsButton:" destination="-1" eventType="touchUpInside" id="AAd-fI-oNh"/>
-                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="L44-xG-eRu">
                     <rect key="frame" x="20" y="54" width="374" height="210"/>
@@ -47,9 +45,6 @@
                                 <segment title="Дебетовые"/>
                             </segments>
                             <color key="selectedSegmentTintColor" red="0.24313725489999999" green="0.3921568627" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="segmentedControl:" destination="-1" eventType="valueChanged" id="6OR-mq-H3l"/>
-                            </connections>
                         </segmentedControl>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IIr-5N-r3D">
                             <rect key="frame" x="0.0" y="67" width="374" height="143"/>

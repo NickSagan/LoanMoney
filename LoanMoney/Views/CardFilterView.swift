@@ -11,9 +11,26 @@ class CardFilterView: UIView {
 
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var cardsButton: UIButton!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    @IBAction func segmentedControl(_ sender: UISegmentedControl) {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initSubviews()
     }
-    @IBAction func cardsButton(_ sender: UIButton) {
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initSubviews()
     }
+
+    func initSubviews() {
+        let nib = UINib(nibName: "CardFilterView", bundle: nil)
+        nib.instantiate(withOwner: self, options: nil)
+        contentView.frame = bounds
+        addSubview(contentView)
+        cardsButton.layer.cornerRadius = 15
+        cardsButton.backgroundColor = .clear
+    }
+    
 }
