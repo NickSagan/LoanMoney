@@ -67,18 +67,18 @@ extension MainVC {
 extension MainVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return data.loans.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LoanCell
 
-        cell.percent.text = data.loans[0].percent
-        cell.underBlue.text = data.loans[0].blue
-        cell.underViolet.text = data.loans[0].violet
-        cell.underYellow.text = data.loans[0].yellow
-        cell.logo.image = UIImage(named: data.loans[0].logo)
+        cell.percent.text = data.loans[indexPath.row].percent
+        cell.underBlue.text = data.loans[indexPath.row].blue
+        cell.underViolet.text = data.loans[indexPath.row].violet
+        cell.underYellow.text = data.loans[indexPath.row].yellow
+        cell.logo.image = UIImage(named: data.loans[indexPath.row].logo)
 
         return cell
     }
@@ -89,7 +89,7 @@ extension MainVC: UICollectionViewDataSource {
 extension MainVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        UIApplication.shared.open(data.loans[0].url, options: [:])
+        UIApplication.shared.open(data.loans[indexPath.row].url, options: [:])
     }
 }
 
