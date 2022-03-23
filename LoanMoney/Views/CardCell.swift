@@ -1,5 +1,5 @@
 //
-//  CreditCardCell.swift
+//  CardCell.swift
 //  LoanMoney
 //
 //  Created by Nick Sagan on 23.03.2022.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CreditCardCell: UICollectionViewCell {
+class CardCell: UICollectionViewCell {
     
     let background: UIImageView = {
         let imgView = UIImageView()
@@ -91,6 +91,7 @@ class CreditCardCell: UICollectionViewCell {
     func addSubviews() {
         addSubview(background)
         background.addSubview(cardImage)
+        background.addSubview(cardName)
         background.addSubview(percent)
         background.addSubview(blueIcon)
         background.addSubview(violetIcon)
@@ -100,6 +101,7 @@ class CreditCardCell: UICollectionViewCell {
         
         background.translatesAutoresizingMaskIntoConstraints = false
         cardImage.translatesAutoresizingMaskIntoConstraints = false
+        cardName.translatesAutoresizingMaskIntoConstraints = false
         percent.translatesAutoresizingMaskIntoConstraints = false
         blueIcon.translatesAutoresizingMaskIntoConstraints = false
         violetIcon.translatesAutoresizingMaskIntoConstraints = false
@@ -115,48 +117,47 @@ class CreditCardCell: UICollectionViewCell {
         }
         
         cardImage.snp.makeConstraints { make in
-            make.top.equalTo(background.snp.top).offset(20)
-            make.left.equalTo(background.snp.left).offset(10)
+            make.top.equalTo(background.snp.top).offset(10)
+            make.left.equalTo(background.snp.left).offset(15)
             make.height.equalTo(background.snp.height).multipliedBy(0.5)
+            make.width.equalTo(background.snp.width).multipliedBy(0.4)
         }
         
         cardName.snp.makeConstraints { make in
             make.top.equalTo(background.snp.top).offset(20)
-            make.left.equalTo(cardImage.snp.right).offset(20)
-            make.right.equalTo(background.snp.right).offset(-20)
+            make.left.equalTo(cardImage.snp.right).offset(15)
         }
         
         percent.snp.makeConstraints { make in
-            make.top.equalTo(cardName.snp.top).offset(20)
-            make.left.equalTo(cardImage.snp.right).offset(20)
-            make.right.equalTo(background.snp.right).offset(-20)
+            make.top.equalTo(cardName.snp.bottom).offset(15)
+            make.left.equalTo(cardImage.snp.right).offset(15)
         }
         
         separator.snp.makeConstraints { make in
-            make.top.equalTo(cardImage.snp.bottom).offset(15)
+            make.top.equalTo(cardImage.snp.bottom).offset(10)
             make.width.equalTo(background.snp.width).multipliedBy(0.8)
             make.height.equalTo(2)
             make.centerX.equalTo(background.snp.centerX)
         }
         
         blueIcon.snp.makeConstraints { make in
-            make.top.equalTo(separator.snp.bottom).offset(15)
+            make.top.equalTo(separator.snp.bottom).offset(10)
             make.left.equalTo(background.snp.left).offset(20)
         }
         
         underBlue.snp.makeConstraints { make in
             make.top.equalTo(separator.snp.bottom).offset(15)
-            make.left.equalTo(blueIcon.snp.left).offset(10)
+            make.left.equalTo(blueIcon.snp.right).offset(10)
         }
         
         violetIcon.snp.makeConstraints { make in
             make.top.equalTo(separator.snp.bottom).offset(15)
-            make.left.equalTo(underBlue.snp.left).offset(50)
+            make.left.equalTo(underBlue.snp.right).offset(40)
         }
         
         underViolet.snp.makeConstraints { make in
             make.top.equalTo(separator.snp.bottom).offset(15)
-            make.left.equalTo(violetIcon.snp.left).offset(10)
+            make.left.equalTo(violetIcon.snp.right).offset(10)
         }
     }
 }
