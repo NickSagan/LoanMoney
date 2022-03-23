@@ -8,6 +8,7 @@
 import Foundation
 
 struct Data {
+    
     let loans: [Loan] = [
     Loan(logo: "colibri", percent: "под 0%", blue: "от 2000\nдо 30000", violet: "от 1\nдо 30 дней", yellow: "от 0%\nдо 1% в день", url: URL(string: "https://my.saleads.pro/s/ffa71010-a214-11ec-8840-c901a67bae26")!),
     Loan(logo: "smsfinance", percent: "под 0%", blue: "от 3000\nдо 30000", violet: "от 1\nдо 21 дня", yellow: "от 0%\nдо 1% в день", url: URL(string: "https://my.saleads.pro/s/0f3ad550-a214-11ec-b814-d97219863970")!),
@@ -21,5 +22,21 @@ struct Data {
     Loan(logo: "dengisrazu", percent: "под 1%", blue: "от 1000\nдо 100000", violet: "от 16\nдо 180 дней", yellow: "от 1%\nдо 5% в день", url: URL(string: "https://my.saleads.pro/s/6e4ab540-a6fc-11ec-8544-e3980e4b26ce")!),
     Loan(logo: "bistrodenginaputi", percent: "под 1%", blue: "от 1000\nдо 100000", violet: "от 7\nдо 180 дней", yellow: "от 1%\nдо 5% в день", url: URL(string: "https://my.saleads.pro/s/cdc22e30-a6fc-11ec-9a4b-fbb52bcccf89")!),
     Loan(logo: "cashtoyou", percent: "под 1%", blue: "от 2000\nдо 30000", violet: "от 6\nдо 21 дня", yellow: "1% в день", url: URL(string: "https://my.saleads.pro/s/633f8920-a6fd-11ec-8b40-6bce582d5b30")!)
+    ]
+    
+    let creditCards: [Card] = [
+        Card(image: "uralsib", name: "УРАЛСИБ Банк", percent: "от 29,9%", blue: "Лимит\nдо 900 000", violet: "Льготный период\nдо 120 дней", url: URL(string: "https://my.saleads.pro/s/63153720-a700-11ec-bcca-09a8546eb585")!),
+        Card(image: "otkritienado", name: "Банк Открытие", percent: "от 39,9%", blue: "Лимит\nдо 1 500 000", violet: "Льготный период\nдо 120 дней", url: URL(string: "https://my.saleads.pro/s/8f1bd4d0-a700-11ec-9d15-07171bf0e30f")!),
+        Card(image: "otkritie", name: "Банк Открытие", percent: "от 39,9%", blue: "Лимит\nдо 500 000", violet: "Льготный период\nдо 120 дней", url: URL(string: "https://my.saleads.pro/s/f5ad5fe0-a700-11ec-afd2-177d5cab2f8a")!),
+        Card(image: "alfabank", name: "Альфа Банк", percent: "от 11,99%", blue: "Лимит\nдо 500 000", violet: "Льготный период\nдо 1 года", url: URL(string: "https://my.saleads.pro/s/35cf1500-a701-11ec-943e-b77e40b30fad")!),
+        Card(image: "halva", name: "Халва", percent: "от 0%", blue: "Лимит\nдо 350 000", violet: "Льготный период\nдо 18 мес", url: URL(string: "https://my.saleads.pro/s/6e01dc10-a701-11ec-b1f7-cbe717a57d08")!)
+    ]
+    
+    let debitCards: [Card] = [
+        Card(image: "alfadebmir", name: "Альфа Банк", percent: "Обслуживание\nбесплатное", blue: "Кэшбек\nдо 20%", violet: "% на остаток\nдо 8%", url: URL(string: "https://my.saleads.pro/s/150a6e40-a6fe-11ec-b2cf-718c4571ddb9")!),
+        Card(image: "otkritiedeb", name: "Открытие Банк", percent: "Обслуживание\nот 0 рублей", blue: "Кэшбек\nдо 30%", violet: "% на остаток\nдо 11%", url: URL(string: "https://my.saleads.pro/s/b000bc30-a6fe-11ec-919f-17ce0461ee97")!),
+        Card(image: "tinkoffdeb", name: "Тинькофф Банк", percent: "Обслуживание\nбесплатное", blue: "Кэшбек\nдо 30%", violet: "% на остаток\nдо 10%", url: URL(string: "https://my.saleads.pro/s/14a00470-a6ff-11ec-a6e0-0d03a795f43e/31")!),
+        Card(image: "alfadeb2", name: "Альфа Банк", percent: "Обслуживание\nбесплатное", blue: "Кэшбек\nдо 2%", violet: "% на остаток\nдо 8%", url: URL(string: "https://my.saleads.pro/s/b5a256a0-a6ff-11ec-be0a-2f40e57aa009")!),
+        Card(image: "gazpromdeb", name: "Газпромбанк", percent: "Обслуживание\nот 0 рублей", blue: "Кэшбек\nдо 35%", violet: "% на остаток\nдо 17%", url: URL(string: "https://my.saleads.pro/s/29823180-7f00-11ec-aa30-df4e204241c0")!)
     ]
 }
