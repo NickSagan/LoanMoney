@@ -23,6 +23,9 @@
 		91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0027EA14E50021DA41 /* CardFilterView.swift */; };
 		91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0227EB32210021DA41 /* CardsVC.swift */; };
 		91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */; };
+		91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0827EB463A0021DA41 /* CalcVC.swift */; };
+		91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0A27EB46450021DA41 /* InfoVC.swift */; };
+		91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0C27EB486F0021DA41 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		91D69F0027EA14E50021DA41 /* CardFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterView.swift; sourceTree = "<group>"; };
 		91D69F0227EB32210021DA41 /* CardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
 		91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterVC.swift; sourceTree = "<group>"; };
+		91D69F0827EB463A0021DA41 /* CalcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcVC.swift; sourceTree = "<group>"; };
+		91D69F0A27EB46450021DA41 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		91D69F0C27EB486F0021DA41 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +119,11 @@
 		91B370A927E4AAD200F5B4BE /* LoanMoney */ = {
 			isa = PBXGroup;
 			children = (
+				91B370AA27E4AAD200F5B4BE /* AppDelegate.swift */,
+				91B370AC27E4AAD200F5B4BE /* SceneDelegate.swift */,
 				91D69EFD27EA126A0021DA41 /* Models */,
 				91D69EFC27EA12640021DA41 /* Views */,
 				91D69EFB27EA125D0021DA41 /* Controllers */,
-				91B370AA27E4AAD200F5B4BE /* AppDelegate.swift */,
-				91B370AC27E4AAD200F5B4BE /* SceneDelegate.swift */,
 				91B370B327E4AADA00F5B4BE /* Assets.xcassets */,
 				91B370B527E4AADA00F5B4BE /* LaunchScreen.storyboard */,
 				91B370B827E4AADA00F5B4BE /* Info.plist */,
@@ -145,9 +151,12 @@
 		91D69EFB27EA125D0021DA41 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				91D69F0C27EB486F0021DA41 /* MainVC.swift */,
 				91B370AE27E4AAD200F5B4BE /* LoansVC.swift */,
-				91D69F0227EB32210021DA41 /* CardsVC.swift */,
 				91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */,
+				91D69F0227EB32210021DA41 /* CardsVC.swift */,
+				91D69F0827EB463A0021DA41 /* CalcVC.swift */,
+				91D69F0A27EB46450021DA41 /* InfoVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,8 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
+				91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */,
+				91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */,
 				91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */,
 				91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */,
+				91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */,
 				91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */,
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
 				91D69EF827E8F3110021DA41 /* Loan.swift in Sources */,
