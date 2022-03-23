@@ -29,8 +29,7 @@ class CardFilterView: UIView {
         nib.instantiate(withOwner: self, options: nil)
         contentView.frame = bounds
         addSubview(contentView)
-        cardsButton.layer.cornerRadius = 15
-        cardsButton.backgroundColor = .clear
+        cardsButton.setTitleColor(.white, for: .normal)
     }
     
 }

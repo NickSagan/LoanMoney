@@ -15,6 +15,7 @@ class LoansVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Займы"
         setupCollectionView()
     }
 }

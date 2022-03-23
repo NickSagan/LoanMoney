@@ -15,6 +15,7 @@ class CardFilterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Карты"
         cardFilterView = CardFilterView()
         view.addSubview(cardFilterView)
         cardFilterView.translatesAutoresizingMaskIntoConstraints = false
@@ -32,8 +33,10 @@ class CardFilterVC: UIViewController {
         let vc = CardsVC()
         if cardFilterView.segmentedControl.selectedSegmentIndex == 0 {
             vc.cards = data.creditCards
+            vc.title = "Кредитные карты"
         } else {
             vc.cards = data.debitCards
+            vc.title = "Дебетовые карты"
         }
         navigationController?.pushViewController(vc, animated: true)
     }
