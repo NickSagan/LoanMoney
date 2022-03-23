@@ -11,7 +11,7 @@ import SnapKit
 class CardFilterVC: UIViewController {
     
     var cardFilterView: CardFilterView!
-    var cardType = "debit"
+    let data = Data()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,24 +21,17 @@ class CardFilterVC: UIViewController {
         cardFilterView.snp.makeConstraints { make in
             make.edges.equalTo(view.safeAreaLayoutGuide).inset(UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10))
         }
-        
         cardFilterView.cardsButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        cardFilterView.segmentedControl.addTarget(self, action: #selector(segmentChanged), for: .valueChanged)
-        
         navigationController?.setToolbarHidden(false, animated: false)
-    }
-    
-    @objc func segmentChanged() {
-        if cardFilterView.segmentedControl.selectedSegmentIndex == 0 {
-            cardType = "debit"
-        } else if cardFilterView.segmentedControl.selectedSegmentIndex == 1 {
-            cardType = "credit"
-        }
     }
     
     @objc func buttonTapped() {
         let vc = CardsVC()
-        vc.cardType = self.cardType
+        if cardFilterView.segmentedControl.selectedSegmentIndex == 0 {
+            vc.cards = data.creditCards
+        } else {
+            vc.cards = data.debitCards
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
 }
