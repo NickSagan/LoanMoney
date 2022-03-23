@@ -1,5 +1,5 @@
 //
-//  DebitCard.swift
+//  Card.swift
 //  LoanMoney
 //
 //  Created by Nick Sagan on 23.03.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DebitCard {
+struct Card {
     let image: String
     let name: String
     let percent: String
