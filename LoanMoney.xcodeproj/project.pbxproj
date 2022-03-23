@@ -26,9 +26,8 @@
 		91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0827EB463A0021DA41 /* CalcVC.swift */; };
 		91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0A27EB46450021DA41 /* InfoVC.swift */; };
 		91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0C27EB486F0021DA41 /* MainVC.swift */; };
-		91D69F0F27EB5CD40021DA41 /* CreditCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0E27EB5CD40021DA41 /* CreditCardCell.swift */; };
-		91D69F1127EB62B40021DA41 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1027EB62B40021DA41 /* CreditCard.swift */; };
-		91D69F1327EB63280021DA41 /* DebitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1227EB63280021DA41 /* DebitCard.swift */; };
+		91D69F0F27EB5CD40021DA41 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0E27EB5CD40021DA41 /* CardCell.swift */; };
+		91D69F1127EB62B40021DA41 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1027EB62B40021DA41 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +70,8 @@
 		91D69F0827EB463A0021DA41 /* CalcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcVC.swift; sourceTree = "<group>"; };
 		91D69F0A27EB46450021DA41 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		91D69F0C27EB486F0021DA41 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		91D69F0E27EB5CD40021DA41 /* CreditCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCell.swift; sourceTree = "<group>"; };
-		91D69F1027EB62B40021DA41 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
-		91D69F1227EB63280021DA41 /* DebitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCard.swift; sourceTree = "<group>"; };
+		91D69F0E27EB5CD40021DA41 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		91D69F1027EB62B40021DA41 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +171,7 @@
 				91B370DA27E64F4300F5B4BE /* LoanCell.swift */,
 				91D69EFE27EA13D10021DA41 /* CardFilterView.xib */,
 				91D69F0027EA14E50021DA41 /* CardFilterView.swift */,
-				91D69F0E27EB5CD40021DA41 /* CreditCardCell.swift */,
+				91D69F0E27EB5CD40021DA41 /* CardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,8 +181,7 @@
 			children = (
 				91D69EF927E8F4B10021DA41 /* Data.swift */,
 				91D69EF727E8F3110021DA41 /* Loan.swift */,
-				91D69F1027EB62B40021DA41 /* CreditCard.swift */,
-				91D69F1227EB63280021DA41 /* DebitCard.swift */,
+				91D69F1027EB62B40021DA41 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,8 +325,7 @@
 			files = (
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
 				91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */,
-				91D69F1327EB63280021DA41 /* DebitCard.swift in Sources */,
-				91D69F1127EB62B40021DA41 /* CreditCard.swift in Sources */,
+				91D69F1127EB62B40021DA41 /* Card.swift in Sources */,
 				91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */,
 				91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */,
 				91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */,
@@ -340,7 +336,7 @@
 				91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */,
 				91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */,
 				91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */,
-				91D69F0F27EB5CD40021DA41 /* CreditCardCell.swift in Sources */,
+				91D69F0F27EB5CD40021DA41 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
