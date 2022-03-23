@@ -38,6 +38,7 @@ class CardCell: UICollectionViewCell {
         label.frame.size.height = 40
         label.frame.size.width = 150
         label.textColor = .black
+        label.numberOfLines = 2
         return label
     }()
     
