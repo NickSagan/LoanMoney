@@ -21,6 +21,8 @@
 		91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF927E8F4B10021DA41 /* Data.swift */; };
 		91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69EFE27EA13D10021DA41 /* CardFilterView.xib */; };
 		91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0027EA14E50021DA41 /* CardFilterView.swift */; };
+		91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0227EB32210021DA41 /* CardsVC.swift */; };
+		91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		91D69EF927E8F4B10021DA41 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		91D69EFE27EA13D10021DA41 /* CardFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardFilterView.xib; sourceTree = "<group>"; };
 		91D69F0027EA14E50021DA41 /* CardFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterView.swift; sourceTree = "<group>"; };
+		91D69F0227EB32210021DA41 /* CardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
+		91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				91B370AE27E4AAD200F5B4BE /* LoansVC.swift */,
+				91D69F0227EB32210021DA41 /* CardsVC.swift */,
+				91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,11 +309,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
+				91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */,
 				91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */,
 				91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */,
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
 				91D69EF827E8F3110021DA41 /* Loan.swift in Sources */,
 				91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */,
+				91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */,
 				91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
