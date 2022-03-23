@@ -43,9 +43,9 @@ extension LoansVC {
     
     func setLayout() -> UICollectionViewFlowLayout {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        layout.itemSize.width = self.view.frame.width - 20
-        layout.itemSize.height = 200
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        layout.itemSize.width = self.view.frame.width - 10
+        layout.itemSize.height = 220
         return layout
     }
     
