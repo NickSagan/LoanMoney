@@ -127,15 +127,15 @@ class LoanCell: UICollectionViewCell {
         
         logo.snp.makeConstraints { make in
             make.top.equalTo(background.snp.top).offset(20)
-            make.left.equalTo(background.snp.left).offset(10)
+            make.left.equalTo(background.snp.left).offset(20)
             make.height.equalTo(background.snp.height).multipliedBy(0.2)
+            make.width.equalTo(background.snp.width).multipliedBy(0.5)
         }
         
         percent.snp.makeConstraints { make in
             make.top.equalTo(background.snp.top).offset(20)
             make.height.equalTo(logo.snp.height)
             make.right.equalTo(background.snp.right).offset(-30)
-            make.left.greaterThanOrEqualTo(logo.snp.right).offset(40)
         }
         
         separator.snp.makeConstraints { make in

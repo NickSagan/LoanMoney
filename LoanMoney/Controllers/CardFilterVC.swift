@@ -19,7 +19,10 @@ class CardFilterVC: UIViewController {
         view.addSubview(cardFilterView)
         cardFilterView.translatesAutoresizingMaskIntoConstraints = false
         cardFilterView.snp.makeConstraints { make in
-            make.edges.equalTo(view.safeAreaLayoutGuide).inset(UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10))
+            make.top.equalTo(view.snp.top)
+            make.bottom.equalTo(view.snp.bottom)
+            make.left.equalTo(view.snp.left)
+            make.right.equalTo(view.snp.right)
         }
         cardFilterView.cardsButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         navigationController?.setToolbarHidden(false, animated: false)
