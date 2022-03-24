@@ -25,10 +25,20 @@ class CalcVC: UIViewController {
             make.right.equalTo(view.snp.right)
         }
         calculatorView.yellowButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
+        // Tap recognizer to dismiss keyboard
+        let tapGestureReconizer = UITapGestureRecognizer(target: self, action: #selector(tap))
+        tapGestureReconizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGestureReconizer)
     }
     
     @objc func buttonTapped() {
         let vc = LoansVC()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // Dismiss keyboard
+    @objc private func tap(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }
