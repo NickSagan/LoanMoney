@@ -26,7 +26,6 @@ class CardFilterVC: UIViewController {
             make.right.equalTo(view.snp.right)
         }
         cardFilterView.cardsButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        navigationController?.setToolbarHidden(false, animated: false)
     }
     
     @objc func buttonTapped() {
