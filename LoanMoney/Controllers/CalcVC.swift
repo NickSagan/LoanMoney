@@ -33,8 +33,9 @@ class CalcVC: UIViewController {
     }
     
     @objc func buttonTapped() {
-        let vc = LoansVC()
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = LoansVC()
+//        navigationController?.pushViewController(vc, animated: true)
+        tabBarController?.selectedIndex = 0
     }
     
     // Dismiss keyboard
