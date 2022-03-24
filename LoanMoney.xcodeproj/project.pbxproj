@@ -28,6 +28,9 @@
 		91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0C27EB486F0021DA41 /* MainVC.swift */; };
 		91D69F0F27EB5CD40021DA41 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0E27EB5CD40021DA41 /* CardCell.swift */; };
 		91D69F1127EB62B40021DA41 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1027EB62B40021DA41 /* Card.swift */; };
+		91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */; };
+		91D69F1727EC4F970021DA41 /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69F1627EC4F970021DA41 /* CalculatorView.xib */; };
+		91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,8 @@
 		91D69F0C27EB486F0021DA41 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		91D69F0E27EB5CD40021DA41 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		91D69F1027EB62B40021DA41 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		91D69F1627EC4F970021DA41 /* CalculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B370DE27E8C61B00F5B4BE /* SnapKit in Frameworks */,
+				91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,9 +175,11 @@
 			isa = PBXGroup;
 			children = (
 				91B370DA27E64F4300F5B4BE /* LoanCell.swift */,
-				91D69EFE27EA13D10021DA41 /* CardFilterView.xib */,
-				91D69F0027EA14E50021DA41 /* CardFilterView.swift */,
 				91D69F0E27EB5CD40021DA41 /* CardCell.swift */,
+				91D69F0027EA14E50021DA41 /* CardFilterView.swift */,
+				91D69EFE27EA13D10021DA41 /* CardFilterView.xib */,
+				91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */,
+				91D69F1627EC4F970021DA41 /* CalculatorView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			name = LoanMoney;
 			packageProductDependencies = (
 				91B370DD27E8C61B00F5B4BE /* SnapKit */,
+				91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */,
 			);
 			productName = LoanMoney;
 			productReference = 91B370A727E4AAD200F5B4BE /* LoanMoney.app */;
@@ -279,6 +288,7 @@
 			mainGroup = 91B3709E27E4AAD200F5B4BE;
 			packageReferences = (
 				91B370DC27E8C61B00F5B4BE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 91B370A827E4AAD200F5B4BE /* Products */;
 			projectDirPath = "";
@@ -296,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D69F1727EC4F970021DA41 /* CalculatorView.xib in Resources */,
 				91B370B727E4AADA00F5B4BE /* LaunchScreen.storyboard in Resources */,
 				91B370B427E4AADA00F5B4BE /* Assets.xcassets in Resources */,
 				91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */,
@@ -324,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
+				91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */,
 				91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */,
 				91D69F1127EB62B40021DA41 /* Card.swift in Sources */,
 				91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */,
@@ -686,6 +698,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -693,6 +713,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 91B370DC27E8C61B00F5B4BE /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
