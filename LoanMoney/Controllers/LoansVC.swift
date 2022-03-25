@@ -18,6 +18,10 @@ class LoansVC: UIViewController {
         title = "Займы"
         setupCollectionView()
     }
+    
+    @objc func sideMenuButton() {
+        
+    }
 }
 
 //MARK: - COLLECTION VIEW SETUP
@@ -40,6 +44,8 @@ extension LoansVC {
         
         view.addSubview(collectionView!)
         self.view = view
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sideMenuButton))
     }
     
     func setLayout() -> UICollectionViewFlowLayout {
