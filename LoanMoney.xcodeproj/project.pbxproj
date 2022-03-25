@@ -32,7 +32,7 @@
 		91D69F1727EC4F970021DA41 /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69F1627EC4F970021DA41 /* CalculatorView.xib */; };
 		91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */; };
 		91D69F1F27EDC6610021DA41 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1E27EDC6610021DA41 /* SideMenu */; };
-		91D69F2127EDCB060021DA41 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2027EDCB060021DA41 /* SideMenuVC.swift */; };
+		91D69F2527EDD24A0021DA41 /* RightSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,7 @@
 		91D69F1027EB62B40021DA41 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		91D69F1627EC4F970021DA41 /* CalculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
-		91D69F2027EDCB060021DA41 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 				91D69F0227EB32210021DA41 /* CardsVC.swift */,
 				91D69F0827EB463A0021DA41 /* CalcVC.swift */,
 				91D69F0A27EB46450021DA41 /* InfoVC.swift */,
-				91D69F2027EDCB060021DA41 /* SideMenuVC.swift */,
+				91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -352,10 +352,10 @@
 				91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */,
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
 				91D69EF827E8F3110021DA41 /* Loan.swift in Sources */,
+				91D69F2527EDD24A0021DA41 /* RightSideMenu.swift in Sources */,
 				91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */,
 				91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */,
 				91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */,
-				91D69F2127EDCB060021DA41 /* SideMenuVC.swift in Sources */,
 				91D69F0F27EB5CD40021DA41 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
