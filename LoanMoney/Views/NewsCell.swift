@@ -18,19 +18,16 @@ class NewsCell: UICollectionViewCell {
     
     let titleNews: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Verdana", size: 18)
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.frame.size.height = 40
-        label.frame.size.width = 250
+        label.font = UIFont(name: "Verdana", size: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .black
+        label.numberOfLines = 0
         return label
     }()
     
     let textNews: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Verdana", size: 16)
-        label.frame.size.height = 250
-        label.frame.size.width = 250
+        label.font = UIFont(name: "Verdana", size: 12)
         label.textColor = .black
         label.numberOfLines = 0
         return label
@@ -57,19 +54,19 @@ class NewsCell: UICollectionViewCell {
         imageNews.snp.makeConstraints { make in
             make.top.equalTo(self)
             make.left.equalTo(self).offset(15)
-            make.right.equalTo(self).offset(15)
+            make.right.equalTo(self).offset(-15)
         }
         
         titleNews.snp.makeConstraints { make in
-            make.top.equalTo(imageNews.snp.top).offset(10)
+            make.top.equalTo(imageNews.snp.bottom).offset(2)
             make.left.equalTo(self).offset(15)
-            make.right.equalTo(self).offset(15)
+            make.right.equalTo(self).offset(-15)
         }
         
         textNews.snp.makeConstraints { make in
-            make.top.equalTo(titleNews.snp.top).offset(10)
+            make.top.equalTo(titleNews.snp.bottom).offset(10)
             make.left.equalTo(self).offset(15)
-            make.right.equalTo(self).offset(15)
+            make.right.equalTo(self).offset(-15)
         }
     }
 }
