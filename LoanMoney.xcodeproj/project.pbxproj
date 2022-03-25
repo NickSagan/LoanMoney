@@ -33,9 +33,9 @@
 		91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */; };
 		91D69F1F27EDC6610021DA41 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1E27EDC6610021DA41 /* SideMenu */; };
 		91D69F2527EDD24A0021DA41 /* RightSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */; };
-		91D69F2727EDD77A0021DA41 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2627EDD77A0021DA41 /* NewsVC.swift */; };
 		91D69F2927EDD88A0021DA41 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2827EDD88A0021DA41 /* NewsCell.swift */; };
 		91D69F2B27EDDA6C0021DA41 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2A27EDDA6C0021DA41 /* News.swift */; };
+		91D69F2D27EDE0550021DA41 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2C27EDE0550021DA41 /* NewsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +83,9 @@
 		91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		91D69F1627EC4F970021DA41 /* CalculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
 		91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenu.swift; sourceTree = "<group>"; };
-		91D69F2627EDD77A0021DA41 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		91D69F2827EDD88A0021DA41 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		91D69F2A27EDDA6C0021DA41 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		91D69F2C27EDE0550021DA41 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 				91D69F0827EB463A0021DA41 /* CalcVC.swift */,
 				91D69F0A27EB46450021DA41 /* InfoVC.swift */,
 				91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */,
-				91D69F2627EDD77A0021DA41 /* NewsVC.swift */,
+				91D69F2C27EDE0550021DA41 /* NewsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -351,13 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
+				91D69F2D27EDE0550021DA41 /* NewsVC.swift in Sources */,
 				91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */,
 				91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */,
 				91D69F1127EB62B40021DA41 /* Card.swift in Sources */,
 				91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */,
 				91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */,
 				91D69F2B27EDDA6C0021DA41 /* News.swift in Sources */,
-				91D69F2727EDD77A0021DA41 /* NewsVC.swift in Sources */,
 				91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */,
 				91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */,
 				91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */,
