@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class LoansVC: UIViewController {
     
@@ -20,7 +21,9 @@ class LoansVC: UIViewController {
     }
     
     @objc func sideMenuButton() {
-        
+        let menu = SideMenuNavigationController(rootViewController: RightSideMenu())
+        menu.presentationStyle = .menuSlideIn
+        present(menu, animated: true, completion: nil)
     }
 }
 
