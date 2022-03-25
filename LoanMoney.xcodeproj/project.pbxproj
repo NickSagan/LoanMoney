@@ -35,6 +35,7 @@
 		91D69F2527EDD24A0021DA41 /* RightSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */; };
 		91D69F2727EDD77A0021DA41 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2627EDD77A0021DA41 /* NewsVC.swift */; };
 		91D69F2927EDD88A0021DA41 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2827EDD88A0021DA41 /* NewsCell.swift */; };
+		91D69F2B27EDDA6C0021DA41 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2A27EDDA6C0021DA41 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenu.swift; sourceTree = "<group>"; };
 		91D69F2627EDD77A0021DA41 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		91D69F2827EDD88A0021DA41 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		91D69F2A27EDDA6C0021DA41 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				91D69EF927E8F4B10021DA41 /* Data.swift */,
 				91D69EF727E8F3110021DA41 /* Loan.swift */,
 				91D69F1027EB62B40021DA41 /* Card.swift */,
+				91D69F2A27EDDA6C0021DA41 /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				91D69F1127EB62B40021DA41 /* Card.swift in Sources */,
 				91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */,
 				91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */,
+				91D69F2B27EDDA6C0021DA41 /* News.swift in Sources */,
 				91D69F2727EDD77A0021DA41 /* NewsVC.swift in Sources */,
 				91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */,
 				91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */,
