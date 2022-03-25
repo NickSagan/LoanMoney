@@ -18,6 +18,7 @@ class LoansVC: UIViewController {
         super.viewDidLoad()
         title = "Займы"
         setupCollectionView()
+        addRightBarButton()
     }
     
     @objc func sideMenuButton() {
@@ -47,8 +48,19 @@ extension LoansVC {
         
         view.addSubview(collectionView!)
         self.view = view
+    }
+    
+    func addRightBarButton() {
+        let item: UIBarButtonItem = {
+            let btn = UIButton(type: .custom)
+            btn.setBackgroundImage(UIImage(named: "sideMenu"), for: .normal)
+            btn.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+            btn.addTarget(self, action: #selector(sideMenuButton), for: .touchUpInside)
+            let item  = UIBarButtonItem(customView: btn)
+            return item
+        }()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sideMenuButton))
+        navigationItem.setRightBarButton(item, animated: true)
     }
     
     func setLayout() -> UICollectionViewFlowLayout {
