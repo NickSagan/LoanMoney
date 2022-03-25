@@ -9,6 +9,8 @@ import Foundation
 
 struct Data {
     
+    let sideMenu = ["Кредитная история", "Новости", "Долговая книга", "Компании"]
+    
     let loans: [Loan] = [
     Loan(logo: "colibri", percent: "под 0%", blue: "от 2000\nдо 30000", violet: "от 1\nдо 30 дней", yellow: "от 0%\nдо 1% в день", url: URL(string: "https://my.saleads.pro/s/ffa71010-a214-11ec-8840-c901a67bae26")!),
     Loan(logo: "smsfinance", percent: "под 0%", blue: "от 3000\nдо 30000", violet: "от 1\nдо 21 дня", yellow: "от 0%\nдо 1% в день", url: URL(string: "https://my.saleads.pro/s/0f3ad550-a214-11ec-b814-d97219863970")!),
