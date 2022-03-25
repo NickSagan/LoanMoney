@@ -31,6 +31,7 @@
 		91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */; };
 		91D69F1727EC4F970021DA41 /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69F1627EC4F970021DA41 /* CalculatorView.xib */; };
 		91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */; };
+		91D69F1F27EDC6610021DA41 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 91D69F1E27EDC6610021DA41 /* SideMenu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B370DE27E8C61B00F5B4BE /* SnapKit in Frameworks */,
+				91D69F1F27EDC6610021DA41 /* SideMenu in Frameworks */,
 				91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +215,7 @@
 			packageProductDependencies = (
 				91B370DD27E8C61B00F5B4BE /* SnapKit */,
 				91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */,
+				91D69F1E27EDC6610021DA41 /* SideMenu */,
 			);
 			productName = LoanMoney;
 			productReference = 91B370A727E4AAD200F5B4BE /* LoanMoney.app */;
@@ -289,6 +292,7 @@
 			packageReferences = (
 				91B370DC27E8C61B00F5B4BE /* XCRemoteSwiftPackageReference "SnapKit" */,
 				91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				91D69F1D27EDC6610021DA41 /* XCRemoteSwiftPackageReference "SideMenu" */,
 			);
 			productRefGroup = 91B370A827E4AAD200F5B4BE /* Products */;
 			projectDirPath = "";
@@ -706,6 +710,14 @@
 				kind = branch;
 			};
 		};
+		91D69F1D27EDC6610021DA41 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -718,6 +730,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		91D69F1E27EDC6610021DA41 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91D69F1D27EDC6610021DA41 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
