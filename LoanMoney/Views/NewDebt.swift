@@ -8,5 +8,10 @@
 import UIKit
 
 class NewDebt: UIView {
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var repaymentDate: UIDatePicker!
+    @IBOutlet weak var issueDate: UIDatePicker!
+    @IBOutlet weak var amount: UITextField!
+    @IBOutlet weak var name: UITextField!
 }
