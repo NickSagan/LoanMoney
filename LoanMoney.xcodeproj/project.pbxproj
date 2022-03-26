@@ -25,7 +25,7 @@
 		91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */; };
 		91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0827EB463A0021DA41 /* CalcVC.swift */; };
 		91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0A27EB46450021DA41 /* InfoVC.swift */; };
-		91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0C27EB486F0021DA41 /* MainVC.swift */; };
+		91D69F0D27EB486F0021DA41 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0C27EB486F0021DA41 /* TabBarVC.swift */; };
 		91D69F0F27EB5CD40021DA41 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F0E27EB5CD40021DA41 /* CardCell.swift */; };
 		91D69F1127EB62B40021DA41 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1027EB62B40021DA41 /* Card.swift */; };
 		91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */; };
@@ -79,7 +79,7 @@
 		91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterVC.swift; sourceTree = "<group>"; };
 		91D69F0827EB463A0021DA41 /* CalcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcVC.swift; sourceTree = "<group>"; };
 		91D69F0A27EB46450021DA41 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
-		91D69F0C27EB486F0021DA41 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		91D69F0C27EB486F0021DA41 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		91D69F0E27EB5CD40021DA41 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		91D69F1027EB62B40021DA41 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		91D69EFB27EA125D0021DA41 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				91D69F0C27EB486F0021DA41 /* MainVC.swift */,
+				91D69F0C27EB486F0021DA41 /* TabBarVC.swift */,
 				91B370AE27E4AAD200F5B4BE /* LoansVC.swift */,
 				91D69F0427EB32AE0021DA41 /* CardFilterVC.swift */,
 				91D69F0227EB32210021DA41 /* CardsVC.swift */,
@@ -367,7 +367,7 @@
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
 				91D69F2D27EDE0550021DA41 /* NewsVC.swift in Sources */,
 				91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */,
-				91D69F0D27EB486F0021DA41 /* MainVC.swift in Sources */,
+				91D69F0D27EB486F0021DA41 /* TabBarVC.swift in Sources */,
 				91D69F1127EB62B40021DA41 /* Card.swift in Sources */,
 				91D69F0927EB463A0021DA41 /* CalcVC.swift in Sources */,
 				91D69F0527EB32AE0021DA41 /* CardFilterVC.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  MainVC.swift
+//  TabBarVC.swift
 //  LoanMoney
 //
 //  Created by Nick Sagan on 23.03.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class TabBarVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class MainVC: UIViewController {
         vc1.title = "Займы"
         vc2.title = "Карты"
         vc3.title = "Калькулятор"
-        vc4.title = "Инфо"
+        vc4.title = "Информация"
         
         tabBarVC.setViewControllers([vc1, vc2, vc3, vc4], animated: false)
         

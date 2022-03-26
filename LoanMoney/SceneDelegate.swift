@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            window?.rootViewController = nc
 //        }
         
-        let nc = UINavigationController(rootViewController: MainVC())
+        let nc = UINavigationController(rootViewController: TabBarVC())
         nc.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(0)
         nc.navigationBar.tintColor = .white
         window?.rootViewController = nc
