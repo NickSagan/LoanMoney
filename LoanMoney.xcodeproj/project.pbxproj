@@ -38,6 +38,9 @@
 		91D69F2D27EDE0550021DA41 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2C27EDE0550021DA41 /* NewsVC.swift */; };
 		91D69F2F27EF1E1B0021DA41 /* CompaniesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2E27EF1E1B0021DA41 /* CompaniesVC.swift */; };
 		91D69F3227EF20ED0021DA41 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3127EF20ED0021DA41 /* Company.swift */; };
+		91D69F3627EF280D0021DA41 /* DebtBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3527EF280D0021DA41 /* DebtBookVC.swift */; };
+		91D69F3827EF30D90021DA41 /* NewDebt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3727EF30D90021DA41 /* NewDebt.swift */; };
+		91D69F3A27EF31040021DA41 /* NewDebt.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69F3927EF31040021DA41 /* NewDebt.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		91D69F2C27EDE0550021DA41 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		91D69F2E27EF1E1B0021DA41 /* CompaniesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesVC.swift; sourceTree = "<group>"; };
 		91D69F3127EF20ED0021DA41 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		91D69F3527EF280D0021DA41 /* DebtBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtBookVC.swift; sourceTree = "<group>"; };
+		91D69F3727EF30D90021DA41 /* NewDebt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDebt.swift; sourceTree = "<group>"; };
+		91D69F3927EF31040021DA41 /* NewDebt.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDebt.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 				91D69F2427EDD24A0021DA41 /* RightSideMenu.swift */,
 				91D69F2C27EDE0550021DA41 /* NewsVC.swift */,
 				91D69F2E27EF1E1B0021DA41 /* CompaniesVC.swift */,
+				91D69F3527EF280D0021DA41 /* DebtBookVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +206,8 @@
 				91D69EFE27EA13D10021DA41 /* CardFilterView.xib */,
 				91D69F1427EC4F7D0021DA41 /* CalculatorView.swift */,
 				91D69F1627EC4F970021DA41 /* CalculatorView.xib */,
+				91D69F3727EF30D90021DA41 /* NewDebt.swift */,
+				91D69F3927EF31040021DA41 /* NewDebt.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +349,7 @@
 				91B370B727E4AADA00F5B4BE /* LaunchScreen.storyboard in Resources */,
 				91B370B427E4AADA00F5B4BE /* Assets.xcassets in Resources */,
 				91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */,
+				91D69F3A27EF31040021DA41 /* NewDebt.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,9 +391,11 @@
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
 				91D69EF827E8F3110021DA41 /* Loan.swift in Sources */,
 				91D69F2527EDD24A0021DA41 /* RightSideMenu.swift in Sources */,
+				91D69F3827EF30D90021DA41 /* NewDebt.swift in Sources */,
 				91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */,
 				91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */,
 				91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */,
+				91D69F3627EF280D0021DA41 /* DebtBookVC.swift in Sources */,
 				91D69F0F27EB5CD40021DA41 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
