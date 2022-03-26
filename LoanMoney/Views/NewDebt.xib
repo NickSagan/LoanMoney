@@ -4,18 +4,20 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewDebt" customModule="LoanMoney" customModuleProvider="target">
             <connections>
                 <outlet property="amount" destination="2wX-K0-5ud" id="Cqp-Wk-gxe"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="xnF-HY-PMo"/>
                 <outlet property="issueDate" destination="LVd-Jr-V2H" id="Q9u-Ak-eKC"/>
                 <outlet property="name" destination="w4o-T1-ZT9" id="VEw-zq-7C2"/>
                 <outlet property="repaymentDate" destination="wac-fK-3q5" id="LI3-UZ-g7m"/>
                 <outlet property="segmentedControl" destination="cSH-Ut-9dk" id="Ya7-8b-8qi"/>
+                <outlet property="yellowButton" destination="Lt7-6L-Zo0" id="McR-MR-zcy"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -32,18 +34,20 @@
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                     <color key="tintColor" red="0.94509803920000002" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Посмотреть предложения" backgroundImage="yellowButton">
+                    <state key="normal" title="  Добавить" backgroundImage="yellowButton">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="plus" symbolScale="large" renderingMode="original"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="21" scale="default" weight="medium"/>
                     </state>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="DeX-s9-APE">
                     <rect key="frame" x="28" y="64" width="340" height="708"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papers1" translatesAutoresizingMaskIntoConstraints="NO" id="oex-nc-n0b">
-                            <rect key="frame" x="0.0" y="0.0" width="340" height="192"/>
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="125.5"/>
                         </imageView>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cSH-Ut-9dk">
-                            <rect key="frame" x="0.0" y="207" width="340" height="48.5"/>
+                            <rect key="frame" x="0.0" y="140.5" width="340" height="32"/>
                             <segments>
                                 <segment title="Дал в долг"/>
                                 <segment title="Взял в долг"/>
@@ -51,7 +55,7 @@
                             <color key="selectedSegmentTintColor" red="0.24313725489999999" green="0.3921568627" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                         </segmentedControl>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFn-mt-fen">
-                            <rect key="frame" x="0.0" y="269.5" width="340" height="130"/>
+                            <rect key="frame" x="0.0" y="186.5" width="340" height="153"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Иван Сергеевич" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4o-T1-ZT9">
                                     <rect key="frame" x="8" y="47" width="282" height="36"/>
@@ -72,10 +76,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.97245491689999997" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igq-hJ-qfq">
-                            <rect key="frame" x="0.0" y="414.5" width="340" height="129.5"/>
+                            <rect key="frame" x="0.0" y="354.5" width="340" height="152.5"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-K0-5ud">
                                     <rect key="frame" x="8" y="47" width="282" height="36"/>
@@ -95,10 +99,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.97245491689999997" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lF-VW-ttz">
-                            <rect key="frame" x="0.0" y="559" width="340" height="149"/>
+                            <rect key="frame" x="0.0" y="522" width="340" height="186"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дата выдачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlm-aK-bEB">
                                     <rect key="frame" x="8" y="8" width="94" height="18"/>
@@ -137,7 +141,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.97245491689999997" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
                 </stackView>
@@ -158,10 +162,8 @@
     <resources>
         <image name="papers1" width="126" height="125.5"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" width="34" height="34"/>
         <image name="rub" width="24" height="24"/>
         <image name="yellowButton" width="160" height="25"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
