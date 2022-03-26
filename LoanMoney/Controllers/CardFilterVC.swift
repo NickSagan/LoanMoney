@@ -51,10 +51,10 @@ class CardFilterVC: UIViewController {
     @objc func buttonTapped() {
         let vc = CardsVC()
         if cardFilterView.segmentedControl.selectedSegmentIndex == 0 {
-            vc.cards = Data.instance.creditCards
+            vc.cards = SharedData.instance.creditCards
             vc.title = "Кредитные карты"
         } else {
-            vc.cards = Data.instance.debitCards
+            vc.cards = SharedData.instance.debitCards
             vc.title = "Дебетовые карты"
         }
         navigationController?.pushViewController(vc, animated: true)

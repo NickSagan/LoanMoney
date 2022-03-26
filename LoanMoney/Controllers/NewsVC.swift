@@ -67,15 +67,15 @@ extension NewsVC {
 extension NewsVC: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Data.instance.news.count
+        return SharedData.instance.news.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NewsCell
-        cell.imageNews.image = UIImage(named: Data.instance.news[indexPath.row].image)
-        cell.titleNews.text = Data.instance.news[indexPath.row].title
-        cell.textNews.text = Data.instance.news[indexPath.row].text
+        cell.imageNews.image = UIImage(named: SharedData.instance.news[indexPath.row].image)
+        cell.titleNews.text = SharedData.instance.news[indexPath.row].title
+        cell.textNews.text = SharedData.instance.news[indexPath.row].text
         return cell
     }
 }

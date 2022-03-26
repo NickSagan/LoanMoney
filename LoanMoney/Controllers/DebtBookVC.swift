@@ -28,6 +28,10 @@ class DebtBookVC: UIViewController {
         yellowButton.addTarget(self, action: #selector(yellowButtonTapped), for: .touchUpInside)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     @objc func yellowButtonTapped() {
         let vc = NewDebtVC()
         navigationController?.pushViewController(vc, animated: true)
@@ -64,12 +68,23 @@ class DebtBookVC: UIViewController {
 
 extension DebtBookVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        Data.instance.debts.count
+        SharedData.instance.debts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = Data.instance.debts[indexPath.row].name
+        cell.textLabel?.text = SharedData.instance.debts[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            SharedData.instance.debts.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
 }

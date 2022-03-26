@@ -7,15 +7,10 @@
 
 import Foundation
 
-struct Debt {
+struct Debt: Codable {
     let name: String
     let amount: Int
     let issue: Date
     let repayment: Date
-    let type: DebtType
-}
-
-enum DebtType: String {
-    case Debit = "Дал в долг"
-    case Credit = "Взял в долг"
+    let type: String
 }

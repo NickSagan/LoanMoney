@@ -26,18 +26,36 @@ class NewDebtVC: UIViewController {
             make.right.equalTo(view.snp.right)
         }
         newDebtView.yellowButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
+        // Tap recognizer to dismiss keyboard
+        let tapGestureReconizer = UITapGestureRecognizer(target: self, action: #selector(tap))
+        tapGestureReconizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGestureReconizer)
     }
 
+    // Dismiss keyboard
+    @objc private func tap(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     
     @objc func buttonTapped() {
-        let vc = CardsVC()
+        var type: String
         if newDebtView.segmentedControl.selectedSegmentIndex == 0 {
-            vc.cards = Data.instance.creditCards
-            vc.title = "Кредитные карты"
+            type = "Дал в долг"
         } else {
-            vc.cards = Data.instance.debitCards
-            vc.title = "Дебетовые карты"
+            type = "Взял в долг"
         }
-        navigationController?.pushViewController(vc, animated: true)
+        
+        var name = newDebtView.name.text ?? ""
+        if name == "" { name = "Без имени"}
+        
+        let amount = Int(newDebtView.amount.text ?? "0") ?? 0
+        let issue = newDebtView.issueDate.date
+        let repayment = newDebtView.repaymentDate.date
+        
+        let debt = Debt(name: name, amount: amount, issue: issue, repayment: repayment, type: type)
+        SharedData.instance.debts.append(debt)
+        
+        navigationController?.popViewController(animated: true)
     }
 }

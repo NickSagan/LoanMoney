@@ -21,7 +21,7 @@ class InfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Информация"
-        info.text = Data.instance.infotext
+        info.text = SharedData.instance.infotext
 
         view.addSubview(info)
         info.translatesAutoresizingMaskIntoConstraints = false

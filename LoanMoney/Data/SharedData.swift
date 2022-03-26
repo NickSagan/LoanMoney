@@ -1,5 +1,5 @@
 //
-//  Data.swift
+//  SharedData.swift
 //  LoanMoney
 //
 //  Created by Nick Sagan on 21.03.2022.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class Data {
+class SharedData {
     
-    static let instance = Data()
+    static let instance = SharedData()
     private init() { }
     
     let sideMenu = ["Кредитная история", "Новости", "Долговая книга", "Компании"]
@@ -87,10 +87,26 @@ class Data {
     Company(name: "CashToYou", url: URL(string: "https://my.saleads.pro/s/633f8920-a6fd-11ec-8b40-6bce582d5b30")!)
     ]
     
-    let debts: [Debt] = [
-        Debt(name: "Андрей", amount: 15000, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Debit),
-        Debt(name: "Сергей", amount: 300, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Credit),
-        Debt(name: "Анна", amount: 9000, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Debit),
-        Debt(name: "Виктория", amount: 60000, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Credit),
-    ]
+    var debts: [Debt] {
+        get {
+            guard let data = try? Data(contentsOf: .debtsArray) else { return [] }
+            return (try? JSONDecoder().decode([Debt].self, from: data)) ?? []
+        }
+        set {
+            try? JSONEncoder().encode(newValue).write(to: .debtsArray)
+        }
+    }
+}
+
+// https://stackoverflow.com/questions/63367953/storing-array-of-custom-objects-in-userdefaults
+// To save and read debts: [Debt]
+
+extension URL {
+    static var debtsArray: URL {
+        let applicationSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+        let bundleID = Bundle.main.bundleIdentifier ?? "LoanMoney"
+        let subDirectory = applicationSupport.appendingPathComponent(bundleID, isDirectory: true)
+        try? FileManager.default.createDirectory(at: subDirectory, withIntermediateDirectories: true, attributes: nil)
+        return subDirectory.appendingPathComponent("debts.json")
+    }
 }

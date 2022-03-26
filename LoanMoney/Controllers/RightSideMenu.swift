@@ -19,12 +19,12 @@ class RightSideMenu: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Data.instance.sideMenu.count
+        return SharedData.instance.sideMenu.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = Data.instance.sideMenu[indexPath.row]
+        cell.textLabel?.text = SharedData.instance.sideMenu[indexPath.row]
         return cell
     }
     
