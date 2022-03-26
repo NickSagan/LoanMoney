@@ -86,4 +86,11 @@ class Data {
     Company(name: "Деньги сразу", url: URL(string: "https://my.saleads.pro/s/6e4ab540-a6fc-11ec-8544-e3980e4b26ce")!),
     Company(name: "CashToYou", url: URL(string: "https://my.saleads.pro/s/633f8920-a6fd-11ec-8b40-6bce582d5b30")!)
     ]
+    
+    let debts: [Debt] = [
+        Debt(name: "Андрей", amount: 15000, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Debit),
+        Debt(name: "Сергей", amount: 300, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Credit),
+        Debt(name: "Анна", amount: 9000, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Debit),
+        Debt(name: "Виктория", amount: 60000, issue: Date(timeIntervalSince1970: 1648305013), repayment: Date(timeIntervalSince1970: 1648405013), type: .Credit),
+    ]
 }
