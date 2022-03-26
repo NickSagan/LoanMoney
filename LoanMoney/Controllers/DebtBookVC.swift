@@ -73,7 +73,8 @@ extension DebtBookVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = SharedData.instance.debts[indexPath.row].name
+        let debt = SharedData.instance.debts[indexPath.row]
+        cell.textLabel?.text = "\(debt.name) \(debt.issue) \(debt.type) \(debt.amount) руб. до \(debt.repayment)"
         return cell
     }
     

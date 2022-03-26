@@ -41,13 +41,13 @@ class NewDebtVC: UIViewController {
     @objc func buttonTapped() {
         var type: String
         if newDebtView.segmentedControl.selectedSegmentIndex == 0 {
-            type = "Дал в долг"
+            type = "дал в долг"
         } else {
-            type = "Взял в долг"
+            type = "взял в долг"
         }
         
         var name = newDebtView.name.text ?? ""
-        if name == "" { name = "Без имени"}
+        if name == "" { name = "Кто-то"}
         
         let amount = Int(newDebtView.amount.text ?? "0") ?? 0
         let issue = newDebtView.issueDate.date
