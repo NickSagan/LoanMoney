@@ -73,5 +73,17 @@ class Data {
         News(image: "news4", title: "Микрозаймы не выходя из дома.", text: "Сегодня рынок займов готов предоставить свои услуги даже личностям с плохой кредитной историей. Микрофинансисты не считают проблемой высокий уровень задолженностей у обратившихся клиентов, а наоборот предлагают более удобные условия для микрозайма. При этом оформить можно все через любое устройство с выходом в интернет, а деньги поступят моментально карту.")
     ]
     
-    let companies = []
+    let companies: [Company] = [
+    Company(name: "Колибри деньги", url: URL(string: "https://my.saleads.pro/s/ffa71010-a214-11ec-8840-c901a67bae26")!),
+    Company(name: "СМС Финанс", url: URL(string: "https://my.saleads.pro/s/0f3ad550-a214-11ec-b814-d97219863970")!),
+    Company(name: "Миг Кредит", url: URL(string: "https://my.saleads.pro/s/73308250-a216-11ec-a6e9-6f515a4495ea")!),
+    Company(name: "Отличные наличные", url: URL(string: "https://my.saleads.pro/s/adcd2b90-a216-11ec-85c0-178a67aabdb3")!),
+    Company(name: "Smart Start", url: URL(string: "https://my.saleads.pro/s/a20abf00-a6f8-11ec-a1ef-1f8a8681464b")!),
+    Company(name: "Vivus", url: URL(string: "https://my.saleads.pro/s/945a6070-a6f9-11ec-b059-4ff5e90a4559")!),
+    Company(name: "Быстроденьги", url: URL(string: "https://my.saleads.pro/s/2ed65d60-a6fa-11ec-8531-df94dc920ba3")!),
+    Company(name: "Хорошие деньги", url: URL(string: "https://my.saleads.pro/s/d8092070-a6fa-11ec-9cd9-5bd032211bbb")!),
+    Company(name: "Срочно деньги", url: URL(string: "https://my.saleads.pro/s/dd5ccb10-a6fb-11ec-9e0b-9f4be1a0abbf")!),
+    Company(name: "Деньги сразу", url: URL(string: "https://my.saleads.pro/s/6e4ab540-a6fc-11ec-8544-e3980e4b26ce")!),
+    Company(name: "CashToYou", url: URL(string: "https://my.saleads.pro/s/633f8920-a6fd-11ec-8b40-6bce582d5b30")!)
+    ]
 }
