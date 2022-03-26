@@ -1,5 +1,5 @@
 //
-//  NewDebt.swift
+//  NewDebtView.swift
 //  LoanMoney
 //
 //  Created by Nick Sagan on 26.03.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewDebt: UIView {
+class NewDebtView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!

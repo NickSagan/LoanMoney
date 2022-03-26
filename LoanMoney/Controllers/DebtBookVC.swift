@@ -18,7 +18,6 @@ class DebtBookVC: UIViewController {
         button.setTitle("  Новый долг", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.setImage(UIImage(named: "plus"), for: .normal)
-        button.frame.size = CGSize(width: 320, height: 50)
         return button
     }()
     
@@ -30,7 +29,8 @@ class DebtBookVC: UIViewController {
     }
     
     @objc func yellowButtonTapped() {
-        
+        let vc = NewDebtVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func addTableViewAndButton() {
@@ -52,8 +52,10 @@ class DebtBookVC: UIViewController {
         
         yellowButton.snp.makeConstraints { make in
             make.top.equalTo(tableView.snp.bottom).offset(20)
-            make.bottom.equalTo(view.snp.bottom)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
             make.centerX.equalTo(view.snp.centerX)
+            make.height.equalTo(50)
+            make.width.equalTo(view.snp.width).multipliedBy(0.8)
         }
     }
 }
