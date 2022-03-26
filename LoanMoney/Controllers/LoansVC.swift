@@ -12,7 +12,6 @@ class LoansVC: UIViewController {
     
     private var refreshControl: UIRefreshControl!
     private var collectionView: UICollectionView!
-    let data = Data()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,18 +81,18 @@ extension LoansVC {
 extension LoansVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.loans.count
+        return Data.instance.loans.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LoanCell
 
-        cell.percent.text = data.loans[indexPath.row].percent
-        cell.underBlue.text = data.loans[indexPath.row].blue
-        cell.underViolet.text = data.loans[indexPath.row].violet
-        cell.underYellow.text = data.loans[indexPath.row].yellow
-        cell.logo.image = UIImage(named: data.loans[indexPath.row].logo)
+        cell.percent.text = Data.instance.loans[indexPath.row].percent
+        cell.underBlue.text = Data.instance.loans[indexPath.row].blue
+        cell.underViolet.text = Data.instance.loans[indexPath.row].violet
+        cell.underYellow.text = Data.instance.loans[indexPath.row].yellow
+        cell.logo.image = UIImage(named: Data.instance.loans[indexPath.row].logo)
 
         return cell
     }
@@ -104,6 +103,6 @@ extension LoansVC: UICollectionViewDataSource {
 extension LoansVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        UIApplication.shared.open(data.loans[indexPath.row].url, options: [:])
+        UIApplication.shared.open(Data.instance.loans[indexPath.row].url, options: [:])
     }
 }

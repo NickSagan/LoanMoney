@@ -17,12 +17,10 @@ class InfoVC: UIViewController {
         return tv
     }()
     
-    let data = Data()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Информация"
-        info.text = data.infotext
+        info.text = Data.instance.infotext
 
         view.addSubview(info)
         info.translatesAutoresizingMaskIntoConstraints = false

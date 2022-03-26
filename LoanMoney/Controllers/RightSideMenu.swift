@@ -9,8 +9,6 @@ import UIKit
 
 class RightSideMenu: UITableViewController {
     
-    let data = Data()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -21,12 +19,12 @@ class RightSideMenu: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.sideMenu.count
+        return Data.instance.sideMenu.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = data.sideMenu[indexPath.row]
+        cell.textLabel?.text = Data.instance.sideMenu[indexPath.row]
         return cell
     }
     

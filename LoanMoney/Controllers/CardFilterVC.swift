@@ -11,7 +11,6 @@ import SnapKit
 class CardFilterVC: UIViewController {
     
     var cardFilterView: CardFilterView!
-    let data = Data()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +30,10 @@ class CardFilterVC: UIViewController {
     @objc func buttonTapped() {
         let vc = CardsVC()
         if cardFilterView.segmentedControl.selectedSegmentIndex == 0 {
-            vc.cards = data.creditCards
+            vc.cards = Data.instance.creditCards
             vc.title = "Кредитные карты"
         } else {
-            vc.cards = data.debitCards
+            vc.cards = Data.instance.debitCards
             vc.title = "Дебетовые карты"
         }
         navigationController?.pushViewController(vc, animated: true)

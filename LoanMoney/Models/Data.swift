@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Data {
+class Data {
+    
+    static let instance = Data()
+    private init() { }
     
     let sideMenu = ["Кредитная история", "Новости", "Долговая книга", "Компании"]
     
