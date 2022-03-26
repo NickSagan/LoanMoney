@@ -33,7 +33,7 @@ class RightSideMenu: UITableViewController {
         case 0: UIApplication.shared.open(URL(string: "https://credistory.ru/")!, options: [:])
         case 1: let vc = NewsVC(); navigationController?.pushViewController(vc, animated: true)
         case 2: tabBarController?.selectedIndex = 2
-        case 3: tabBarController?.selectedIndex = 3
+        case 3: let vc = CompaniesVC(); navigationController?.pushViewController(vc, animated: true)
         default: print("Error: row out of index")
         }
 

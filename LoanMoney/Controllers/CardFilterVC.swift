@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import SideMenu
 
 class CardFilterVC: UIViewController {
     
@@ -25,6 +26,26 @@ class CardFilterVC: UIViewController {
             make.right.equalTo(view.snp.right)
         }
         cardFilterView.cardsButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        addRightBarButton()
+    }
+    
+    func addRightBarButton() {
+        let item: UIBarButtonItem = {
+            let btn = UIButton(type: .custom)
+            btn.setBackgroundImage(UIImage(named: "sideMenu"), for: .normal)
+            btn.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+            btn.addTarget(self, action: #selector(sideMenuButton), for: .touchUpInside)
+            let item  = UIBarButtonItem(customView: btn)
+            return item
+        }()
+        
+        navigationItem.setRightBarButton(item, animated: true)
+    }
+    
+    @objc func sideMenuButton() {
+        let menu = SideMenuNavigationController(rootViewController: RightSideMenu())
+        menu.presentationStyle = .menuSlideIn
+        present(menu, animated: true, completion: nil)
     }
     
     @objc func buttonTapped() {
