@@ -37,6 +37,7 @@
 		91D69F2B27EDDA6C0021DA41 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2A27EDDA6C0021DA41 /* News.swift */; };
 		91D69F2D27EDE0550021DA41 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2C27EDE0550021DA41 /* NewsVC.swift */; };
 		91D69F2F27EF1E1B0021DA41 /* CompaniesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F2E27EF1E1B0021DA41 /* CompaniesVC.swift */; };
+		91D69F3227EF20ED0021DA41 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3127EF20ED0021DA41 /* Company.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		91D69F2A27EDDA6C0021DA41 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		91D69F2C27EDE0550021DA41 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		91D69F2E27EF1E1B0021DA41 /* CompaniesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesVC.swift; sourceTree = "<group>"; };
+		91D69F3127EF20ED0021DA41 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				91B370AA27E4AAD200F5B4BE /* AppDelegate.swift */,
 				91B370AC27E4AAD200F5B4BE /* SceneDelegate.swift */,
+				91D69F3027EF20700021DA41 /* Data */,
 				91D69EFD27EA126A0021DA41 /* Models */,
 				91D69EFC27EA12640021DA41 /* Views */,
 				91D69EFB27EA125D0021DA41 /* Controllers */,
@@ -203,12 +206,20 @@
 		91D69EFD27EA126A0021DA41 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				91D69EF927E8F4B10021DA41 /* Data.swift */,
 				91D69EF727E8F3110021DA41 /* Loan.swift */,
 				91D69F1027EB62B40021DA41 /* Card.swift */,
 				91D69F2A27EDDA6C0021DA41 /* News.swift */,
+				91D69F3127EF20ED0021DA41 /* Company.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		91D69F3027EF20700021DA41 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				91D69EF927E8F4B10021DA41 /* Data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +375,7 @@
 				91D69EFA27E8F4B10021DA41 /* Data.swift in Sources */,
 				91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */,
 				91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */,
+				91D69F3227EF20ED0021DA41 /* Company.swift in Sources */,
 				91D69F2927EDD88A0021DA41 /* NewsCell.swift in Sources */,
 				91D69F2F27EF1E1B0021DA41 /* CompaniesVC.swift in Sources */,
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
