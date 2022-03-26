@@ -41,6 +41,7 @@
 		91D69F3627EF280D0021DA41 /* DebtBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3527EF280D0021DA41 /* DebtBookVC.swift */; };
 		91D69F3827EF30D90021DA41 /* NewDebt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3727EF30D90021DA41 /* NewDebt.swift */; };
 		91D69F3A27EF31040021DA41 /* NewDebt.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69F3927EF31040021DA41 /* NewDebt.xib */; };
+		91D69F3C27EF58EC0021DA41 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3B27EF58EC0021DA41 /* Debt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		91D69F3527EF280D0021DA41 /* DebtBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtBookVC.swift; sourceTree = "<group>"; };
 		91D69F3727EF30D90021DA41 /* NewDebt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDebt.swift; sourceTree = "<group>"; };
 		91D69F3927EF31040021DA41 /* NewDebt.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDebt.xib; sourceTree = "<group>"; };
+		91D69F3B27EF58EC0021DA41 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				91D69F1027EB62B40021DA41 /* Card.swift */,
 				91D69F2A27EDDA6C0021DA41 /* News.swift */,
 				91D69F3127EF20ED0021DA41 /* Company.swift */,
+				91D69F3B27EF58EC0021DA41 /* Debt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				91D69F0B27EB46450021DA41 /* InfoVC.swift in Sources */,
 				91D69F0127EA14E50021DA41 /* CardFilterView.swift in Sources */,
 				91D69F3227EF20ED0021DA41 /* Company.swift in Sources */,
+				91D69F3C27EF58EC0021DA41 /* Debt.swift in Sources */,
 				91D69F2927EDD88A0021DA41 /* NewsCell.swift in Sources */,
 				91D69F2F27EF1E1B0021DA41 /* CompaniesVC.swift in Sources */,
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
