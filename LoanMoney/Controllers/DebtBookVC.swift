@@ -23,6 +23,7 @@ class DebtBookVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         title = "Долговая книга"
         addTableViewAndButton()
         yellowButton.addTarget(self, action: #selector(yellowButtonTapped), for: .touchUpInside)
@@ -74,7 +75,9 @@ extension DebtBookVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let debt = SharedData.instance.debts[indexPath.row]
-        cell.textLabel?.text = "\(debt.name) \(debt.issue) \(debt.type) \(debt.amount) руб. до \(debt.repayment)"
+        
+        cell.textLabel?.numberOfLines = 2
+        cell.textLabel?.text = "\(debt.name) \(debt.issue.dateString()) \(debt.type)\n\(debt.amount) руб. до \(debt.repayment.dateString())"
         return cell
     }
     
@@ -87,5 +90,17 @@ extension DebtBookVC: UITableViewDataSource, UITableViewDelegate {
             SharedData.instance.debts.remove(at: indexPath.row)
             tableView.reloadData()
         }
+    }
+}
+
+// https://stackoverflow.com/questions/24070450/how-to-get-the-current-time-as-datetime
+
+extension Date {
+    
+    func dateString() -> String {
+        let df = DateFormatter()
+        df.dateFormat = "dd.MM.yyyy"
+        let dateString = df.string(from: self)
+        return dateString
     }
 }
