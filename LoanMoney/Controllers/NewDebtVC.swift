@@ -41,9 +41,9 @@ class NewDebtVC: UIViewController {
     @objc func buttonTapped() {
         var type: String
         if newDebtView.segmentedControl.selectedSegmentIndex == 0 {
-            type = "дал в долг"
+            type = "дал(a) в долг"
         } else {
-            type = "взял в долг"
+            type = "взял(a) в долг"
         }
         
         var name = newDebtView.name.text ?? ""
