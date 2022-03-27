@@ -43,7 +43,6 @@
 		91D69F3A27EF31040021DA41 /* NewDebtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69F3927EF31040021DA41 /* NewDebtView.xib */; };
 		91D69F3C27EF58EC0021DA41 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3B27EF58EC0021DA41 /* Debt.swift */; };
 		91D69F3E27EF60150021DA41 /* NewDebtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3D27EF60150021DA41 /* NewDebtVC.swift */; };
-		91D69F4027EF69190021DA41 /* DebtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69F3F27EF69190021DA41 /* DebtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +100,6 @@
 		91D69F3927EF31040021DA41 /* NewDebtView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDebtView.xib; sourceTree = "<group>"; };
 		91D69F3B27EF58EC0021DA41 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		91D69F3D27EF60150021DA41 /* NewDebtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDebtVC.swift; sourceTree = "<group>"; };
-		91D69F3F27EF69190021DA41 /* DebtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +241,6 @@
 				91B370DA27E64F4300F5B4BE /* LoanCell.swift */,
 				91D69F0E27EB5CD40021DA41 /* CardCell.swift */,
 				91D69F2827EDD88A0021DA41 /* NewsCell.swift */,
-				91D69F3F27EF69190021DA41 /* DebtCell.swift */,
 			);
 			path = "Cell Views";
 			sourceTree = "<group>";
@@ -409,7 +406,6 @@
 				91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */,
 				91D69EF827E8F3110021DA41 /* Loan.swift in Sources */,
 				91D69F2527EDD24A0021DA41 /* RightSideMenu.swift in Sources */,
-				91D69F4027EF69190021DA41 /* DebtCell.swift in Sources */,
 				91D69F3827EF30D90021DA41 /* NewDebtView.swift in Sources */,
 				91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */,
 				91D69F0327EB32210021DA41 /* CardsVC.swift in Sources */,
