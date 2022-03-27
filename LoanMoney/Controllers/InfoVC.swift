@@ -20,6 +20,7 @@ class InfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         title = "Информация"
         info.text = SharedData.instance.infotext
 
