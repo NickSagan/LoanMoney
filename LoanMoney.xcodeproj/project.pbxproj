@@ -18,6 +18,13 @@
 		91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370DA27E64F4300F5B4BE /* LoanCell.swift */; };
 		91B370DE27E8C61B00F5B4BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91B370DD27E8C61B00F5B4BE /* SnapKit */; };
 		91C0E83A27F1EC59009F45F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C0E83927F1EC59009F45F8 /* GoogleService-Info.plist */; };
+		91C0E83D27F1EFB6009F45F8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E83C27F1EFB6009F45F8 /* FirebaseAnalytics */; };
+		91C0E83F27F1EFB6009F45F8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E83E27F1EFB6009F45F8 /* FirebaseAppCheck */; };
+		91C0E84127F1EFB6009F45F8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84027F1EFB6009F45F8 /* FirebaseAuth */; };
+		91C0E84327F1EFB6009F45F8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84227F1EFB6009F45F8 /* FirebaseDatabase */; };
+		91C0E84527F1EFB6009F45F8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84427F1EFB6009F45F8 /* FirebaseFirestore */; };
+		91C0E84727F1EFB6009F45F8 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84627F1EFB6009F45F8 /* FirebaseMessaging */; };
+		91C0E84927F1EFB6009F45F8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84827F1EFB6009F45F8 /* FirebaseStorage */; };
 		91D69EF827E8F3110021DA41 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF727E8F3110021DA41 /* Loan.swift */; };
 		91D69EFA27E8F4B10021DA41 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF927E8F4B10021DA41 /* SharedData.swift */; };
 		91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69EFE27EA13D10021DA41 /* CardFilterView.xib */; };
@@ -109,8 +116,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C0E84727F1EFB6009F45F8 /* FirebaseMessaging in Frameworks */,
 				91B370DE27E8C61B00F5B4BE /* SnapKit in Frameworks */,
+				91C0E84127F1EFB6009F45F8 /* FirebaseAuth in Frameworks */,
+				91C0E84927F1EFB6009F45F8 /* FirebaseStorage in Frameworks */,
 				91D69F1F27EDC6610021DA41 /* SideMenu in Frameworks */,
+				91C0E83D27F1EFB6009F45F8 /* FirebaseAnalytics in Frameworks */,
+				91C0E83F27F1EFB6009F45F8 /* FirebaseAppCheck in Frameworks */,
+				91C0E84527F1EFB6009F45F8 /* FirebaseFirestore in Frameworks */,
+				91C0E84327F1EFB6009F45F8 /* FirebaseDatabase in Frameworks */,
 				91D69F1A27EC5D430021DA41 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +282,13 @@
 				91B370DD27E8C61B00F5B4BE /* SnapKit */,
 				91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */,
 				91D69F1E27EDC6610021DA41 /* SideMenu */,
+				91C0E83C27F1EFB6009F45F8 /* FirebaseAnalytics */,
+				91C0E83E27F1EFB6009F45F8 /* FirebaseAppCheck */,
+				91C0E84027F1EFB6009F45F8 /* FirebaseAuth */,
+				91C0E84227F1EFB6009F45F8 /* FirebaseDatabase */,
+				91C0E84427F1EFB6009F45F8 /* FirebaseFirestore */,
+				91C0E84627F1EFB6009F45F8 /* FirebaseMessaging */,
+				91C0E84827F1EFB6009F45F8 /* FirebaseStorage */,
 			);
 			productName = LoanMoney;
 			productReference = 91B370A727E4AAD200F5B4BE /* LoanMoney.app */;
@@ -345,6 +366,7 @@
 				91B370DC27E8C61B00F5B4BE /* XCRemoteSwiftPackageReference "SnapKit" */,
 				91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				91D69F1D27EDC6610021DA41 /* XCRemoteSwiftPackageReference "SideMenu" */,
+				91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 91B370A827E4AAD200F5B4BE /* Products */;
 			projectDirPath = "";
@@ -766,6 +788,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		91D69F1827EC5D430021DA41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -789,6 +819,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 91B370DC27E8C61B00F5B4BE /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		91C0E83C27F1EFB6009F45F8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		91C0E83E27F1EFB6009F45F8 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		91C0E84027F1EFB6009F45F8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		91C0E84227F1EFB6009F45F8 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		91C0E84427F1EFB6009F45F8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		91C0E84627F1EFB6009F45F8 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		91C0E84827F1EFB6009F45F8 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91C0E83B27F1EFB6009F45F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		91D69F1927EC5D430021DA41 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
