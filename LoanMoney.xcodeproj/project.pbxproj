@@ -25,6 +25,7 @@
 		91C0E84527F1EFB6009F45F8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84427F1EFB6009F45F8 /* FirebaseFirestore */; };
 		91C0E84727F1EFB6009F45F8 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84627F1EFB6009F45F8 /* FirebaseMessaging */; };
 		91C0E84927F1EFB6009F45F8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84827F1EFB6009F45F8 /* FirebaseStorage */; };
+		91C0E84C27F212B2009F45F8 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0E84B27F212B2009F45F8 /* PushNotificationManager.swift */; };
 		91D69EF827E8F3110021DA41 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF727E8F3110021DA41 /* Loan.swift */; };
 		91D69EFA27E8F4B10021DA41 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF927E8F4B10021DA41 /* SharedData.swift */; };
 		91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69EFE27EA13D10021DA41 /* CardFilterView.xib */; };
@@ -85,6 +86,8 @@
 		91B370CD27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanMoneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91B370DA27E64F4300F5B4BE /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
 		91C0E83927F1EC59009F45F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91C0E84A27F20F24009F45F8 /* LoanMoney.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoanMoney.entitlements; sourceTree = "<group>"; };
+		91C0E84B27F212B2009F45F8 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		91D69EF727E8F3110021DA41 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		91D69EF927E8F4B10021DA41 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		91D69EFE27EA13D10021DA41 /* CardFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardFilterView.xib; sourceTree = "<group>"; };
@@ -169,8 +172,10 @@
 		91B370A927E4AAD200F5B4BE /* LoanMoney */ = {
 			isa = PBXGroup;
 			children = (
+				91C0E84A27F20F24009F45F8 /* LoanMoney.entitlements */,
 				91B370AA27E4AAD200F5B4BE /* AppDelegate.swift */,
 				91B370AC27E4AAD200F5B4BE /* SceneDelegate.swift */,
+				91C0E84B27F212B2009F45F8 /* PushNotificationManager.swift */,
 				91D69F3027EF20700021DA41 /* Data */,
 				91D69EFD27EA126A0021DA41 /* Models */,
 				91D69EFC27EA12640021DA41 /* Views */,
@@ -416,6 +421,7 @@
 			files = (
 				91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */,
 				91D69F2D27EDE0550021DA41 /* NewsVC.swift in Sources */,
+				91C0E84C27F212B2009F45F8 /* PushNotificationManager.swift in Sources */,
 				91D69F1527EC4F7D0021DA41 /* CalculatorView.swift in Sources */,
 				91D69F0D27EB486F0021DA41 /* TabBarVC.swift in Sources */,
 				91D69F1127EB62B40021DA41 /* Card.swift in Sources */,
@@ -607,6 +613,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoanMoney/LoanMoney.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 42UZDYLN4J;
@@ -626,6 +634,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NickSagan.LoanMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -637,6 +646,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoanMoney/LoanMoney.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 42UZDYLN4J;
@@ -656,6 +667,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NickSagan.LoanMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
