@@ -14,8 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
+        
+        let pushManager = PushNotificationManager(userID: "currently_logged_in_user_id")
+        pushManager.registerForPushNotifications()
+        
         return true
     }
 
