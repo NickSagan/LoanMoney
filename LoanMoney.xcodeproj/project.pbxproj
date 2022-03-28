@@ -17,6 +17,7 @@
 		91B370CE27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370CD27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift */; };
 		91B370DB27E64F4300F5B4BE /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370DA27E64F4300F5B4BE /* LoanCell.swift */; };
 		91B370DE27E8C61B00F5B4BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91B370DD27E8C61B00F5B4BE /* SnapKit */; };
+		91C0E83A27F1EC59009F45F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C0E83927F1EC59009F45F8 /* GoogleService-Info.plist */; };
 		91D69EF827E8F3110021DA41 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF727E8F3110021DA41 /* Loan.swift */; };
 		91D69EFA27E8F4B10021DA41 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF927E8F4B10021DA41 /* SharedData.swift */; };
 		91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69EFE27EA13D10021DA41 /* CardFilterView.xib */; };
@@ -76,6 +77,7 @@
 		91B370CB27E4AADB00F5B4BE /* LoanMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanMoneyUITests.swift; sourceTree = "<group>"; };
 		91B370CD27E4AADB00F5B4BE /* LoanMoneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanMoneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91B370DA27E64F4300F5B4BE /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
+		91C0E83927F1EC59009F45F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91D69EF727E8F3110021DA41 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		91D69EF927E8F4B10021DA41 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		91D69EFE27EA13D10021DA41 /* CardFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardFilterView.xib; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				91B370B327E4AADA00F5B4BE /* Assets.xcassets */,
 				91B370B527E4AADA00F5B4BE /* LaunchScreen.storyboard */,
 				91B370B827E4AADA00F5B4BE /* Info.plist */,
+				91C0E83927F1EC59009F45F8 /* GoogleService-Info.plist */,
 			);
 			path = LoanMoney;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				91B370B427E4AADA00F5B4BE /* Assets.xcassets in Resources */,
 				91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */,
 				91D69F3A27EF31040021DA41 /* NewDebtView.xib in Resources */,
+				91C0E83A27F1EC59009F45F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +587,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M8KC244ECU;
+				DEVELOPMENT_TEAM = 42UZDYLN4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoanMoney/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -613,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M8KC244ECU;
+				DEVELOPMENT_TEAM = 42UZDYLN4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoanMoney/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
