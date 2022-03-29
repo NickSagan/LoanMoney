@@ -11,12 +11,7 @@ The application is an aggregator of banking offers for credit cards, debit cards
 * UITabBarController, UICollectionView, UIRefreshControl, UITapGestureRecognizer, UITextView, UITableViewController
 * Programmatic autolayout, Snapkit
 
-<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/1.png" width="300">
-<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/2.png" width="300">
-
-
-![LoanMoney](https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/3.png)
-![LoanMoney](https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/4.png)
+<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/1.png" width="300"> <img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/2.png" width="300"> <img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/3.png" width="300">
 
 # How to use the app
 
@@ -30,8 +25,8 @@ The application is an aggregator of banking offers for credit cards, debit cards
 * Фильтруйте список банковских предложений по следующим параметрам: дебетовая карта, кредитная карта, срок и\или процент займа и прочие параметры.
 * В правом верхнем углу находится кнопка бокового меню с дополнительными функциями приложения, одно из которых это долговая книга. В ней вы можете вести учет людей, которым вы дали в долг или у кого взяли деньги в долг. Нажмите кнопку: "Новый долг", чтобы сделать новую запись. С помощью Segment Control установите даете ли вы деньги или наорот берет их, введите имя контрагента и сумму займа, укажите дату займа и дату возврата с помощью Date Picker. В конце нажмите кнопку Добавить. Свайпайте влево, чтобы удалить запись из долговой книги.
 
-![LoanMoney](https://github.com/NickSagan/Moneybox/blob/2a03455098ceeb53cad9e653c7de380f1ba9872b/5.png)
-![LoanMoney](https://github.com/NickSagan/Moneybox/blob/2a03455098ceeb53cad9e653c7de380f1ba9872b/6.png)
+<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/5.png" width="400"> <img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/4.png" width="400">
+<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/1.png" width="800">
 
 # Message me
 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/64px-Telegram_logo.svg.png)](https://t.me/NickSagan)
