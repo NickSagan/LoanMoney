@@ -11,8 +11,10 @@ The application is an aggregator of banking offers for credit cards, debit cards
 * UITabBarController, UICollectionView, UIRefreshControl, UITapGestureRecognizer, UITextView, UITableViewController
 * Programmatic autolayout, Snapkit
 
-![LoanMoney](https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/1.png)
-![LoanMoney](https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/2.png)
+<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/1.png" width="300">
+<img src="https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/2.png" width="300">
+
+
 ![LoanMoney](https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/3.png)
 ![LoanMoney](https://github.com/NickSagan/LoanMoney/blob/46f61ba565968d7526af47ed20f4f4b78563b458/screenshots/4.png)
 
