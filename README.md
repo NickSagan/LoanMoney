@@ -3,7 +3,7 @@ Eng: This application is an aggregator of banking offers for credit cards, debit
 Rus: Агрегатор банковских предложений по кредитным картам, дебетовым картам и микрозаймам. Также приложение даёт вести долговую книгу: учет людей кому вы дали в долг или у кого взяли в долг деньги.
 
 # Download in AppStore
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Apple_App_Store_icon.jpg)](https://apps.apple.com/ru/app/%D0%BC%D0%BE%D1%8F-%D0%BA%D0%BE%D0%BF%D0%B8%D0%BB%D0%BA%D0%B0-%D1%81%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9/id1612973997?l=en" width="80"> 
+[![](https://upload.wikimedia.org/wikipedia/commons/e/e8/Apple_App_Store_icon.jpg)](https://apps.apple.com/ru/app/%D0%BC%D0%BE%D1%8F-%D0%BA%D0%BE%D0%BF%D0%B8%D0%BB%D0%BA%D0%B0-%D1%81%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9/id1612973997?l=en)
 # This project contains
 
 * UIKit, Firebase, UserNotifications, SideMenu, SwiftyOnboard, IQKeyboardManager, MVC, FileManager
