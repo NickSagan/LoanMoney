@@ -7,6 +7,7 @@
 
 import UIKit
 import SideMenu
+import StoreKit
 
 class LoansVC: UIViewController {
     
@@ -18,6 +19,12 @@ class LoansVC: UIViewController {
         title = "Займы"
         setupCollectionView()
         addRightBarButton()
+        
+        // Rate app if 1st time
+        if (UserDefaults.standard.bool(forKey: "firstRate") == false) {
+            UserDefaults.standard.set(true, forKey: "firstRate")
+            rateApp()
+        }
     }
     
     @objc func sideMenuButton() {
@@ -104,5 +111,23 @@ extension LoansVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         UIApplication.shared.open(SharedData.instance.loans[indexPath.row].url, options: [:])
+    }
+}
+
+//MARK: - Rate APP
+
+extension LoansVC {
+    func rateApp() {
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+
+        } else if let url = URL(string: "itms-apps://itunes.apple.com/app/" + "appId") {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
 }
