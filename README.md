@@ -1,5 +1,6 @@
 # LoanMoney (Микрозаймы)
 Eng: This application is an aggregator of banking offers for credit cards, debit cards and microloans. The application also allows you to keep a debt book: keeping track of people to whom you lent money or from whom you borrowed money.
+
 Rus: Агрегатор банковских предложений по кредитным картам, дебетовым картам и микрозаймам. Также приложение даёт вести долговую книгу: учет людей кому вы дали в долг или у кого взяли в долг деньги.
 
 # Download in AppStore
