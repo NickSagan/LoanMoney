@@ -25,6 +25,7 @@
 		91C0E84727F1EFB6009F45F8 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84627F1EFB6009F45F8 /* FirebaseMessaging */; };
 		91C0E84927F1EFB6009F45F8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 91C0E84827F1EFB6009F45F8 /* FirebaseStorage */; };
 		91C0E84C27F212B2009F45F8 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0E84B27F212B2009F45F8 /* PushNotificationManager.swift */; };
+		91C0E84E27F5E4C9009F45F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C0E84D27F5E4C9009F45F8 /* GoogleService-Info.plist */; };
 		91D69EF827E8F3110021DA41 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF727E8F3110021DA41 /* Loan.swift */; };
 		91D69EFA27E8F4B10021DA41 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D69EF927E8F4B10021DA41 /* SharedData.swift */; };
 		91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D69EFE27EA13D10021DA41 /* CardFilterView.xib */; };
@@ -86,6 +87,7 @@
 		91B370DA27E64F4300F5B4BE /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
 		91C0E84A27F20F24009F45F8 /* LoanMoney.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoanMoney.entitlements; sourceTree = "<group>"; };
 		91C0E84B27F212B2009F45F8 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		91C0E84D27F5E4C9009F45F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91D69EF727E8F3110021DA41 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		91D69EF927E8F4B10021DA41 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		91D69EFE27EA13D10021DA41 /* CardFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardFilterView.xib; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				91B370B327E4AADA00F5B4BE /* Assets.xcassets */,
 				91B370B527E4AADA00F5B4BE /* LaunchScreen.storyboard */,
 				91B370B827E4AADA00F5B4BE /* Info.plist */,
+				91C0E84D27F5E4C9009F45F8 /* GoogleService-Info.plist */,
 			);
 			path = LoanMoney;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				91B370B427E4AADA00F5B4BE /* Assets.xcassets in Resources */,
 				91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */,
 				91D69F3A27EF31040021DA41 /* NewDebtView.xib in Resources */,
+				91C0E84E27F5E4C9009F45F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
