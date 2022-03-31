@@ -620,6 +620,7 @@
 				DEVELOPMENT_TEAM = 42UZDYLN4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoanMoney/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Займы онлайн и микрозаймы";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -652,6 +653,7 @@
 				DEVELOPMENT_TEAM = 42UZDYLN4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoanMoney/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Займы онлайн и микрозаймы";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
