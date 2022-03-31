@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		910E3F6527F5F6C20025C8ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 910E3F6427F5F6C20025C8ED /* GoogleService-Info.plist */; };
+		910E3F6727F6017F0025C8ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 910E3F6627F6017F0025C8ED /* GoogleService-Info.plist */; };
 		91B370AB27E4AAD200F5B4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370AA27E4AAD200F5B4BE /* AppDelegate.swift */; };
 		91B370AD27E4AAD200F5B4BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370AC27E4AAD200F5B4BE /* SceneDelegate.swift */; };
 		91B370AF27E4AAD200F5B4BE /* LoansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B370AE27E4AAD200F5B4BE /* LoansVC.swift */; };
@@ -72,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		910E3F6427F5F6C20025C8ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		910E3F6627F6017F0025C8ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91B370A727E4AAD200F5B4BE /* LoanMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B370AA27E4AAD200F5B4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91B370AC27E4AAD200F5B4BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 				91B370B327E4AADA00F5B4BE /* Assets.xcassets */,
 				91B370B527E4AADA00F5B4BE /* LaunchScreen.storyboard */,
 				91B370B827E4AADA00F5B4BE /* Info.plist */,
-				910E3F6427F5F6C20025C8ED /* GoogleService-Info.plist */,
+				910E3F6627F6017F0025C8ED /* GoogleService-Info.plist */,
 			);
 			path = LoanMoney;
 			sourceTree = "<group>";
@@ -394,7 +394,7 @@
 				91B370B427E4AADA00F5B4BE /* Assets.xcassets in Resources */,
 				91D69EFF27EA13D10021DA41 /* CardFilterView.xib in Resources */,
 				91D69F3A27EF31040021DA41 /* NewDebtView.xib in Resources */,
-				910E3F6527F5F6C20025C8ED /* GoogleService-Info.plist in Resources */,
+				910E3F6727F6017F0025C8ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
