@@ -100,16 +100,6 @@ class CardCell: UICollectionViewCell {
         background.addSubview(underViolet)
         background.addSubview(separator)
         
-        background.translatesAutoresizingMaskIntoConstraints = false
-        cardImage.translatesAutoresizingMaskIntoConstraints = false
-        cardName.translatesAutoresizingMaskIntoConstraints = false
-        percent.translatesAutoresizingMaskIntoConstraints = false
-        blueIcon.translatesAutoresizingMaskIntoConstraints = false
-        violetIcon.translatesAutoresizingMaskIntoConstraints = false
-        underBlue.translatesAutoresizingMaskIntoConstraints = false
-        underViolet.translatesAutoresizingMaskIntoConstraints = false
-        separator.translatesAutoresizingMaskIntoConstraints = false
-        
         background.snp.makeConstraints { make in
             make.top.equalTo(self)
             make.left.equalTo(self)

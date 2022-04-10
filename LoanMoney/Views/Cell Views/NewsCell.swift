@@ -46,11 +46,7 @@ class NewsCell: UICollectionViewCell {
         addSubview(imageNews)
         addSubview(titleNews)
         addSubview(textNews)
-        
-        imageNews.translatesAutoresizingMaskIntoConstraints = false
-        titleNews.translatesAutoresizingMaskIntoConstraints = false
-        textNews.translatesAutoresizingMaskIntoConstraints = false
- 
+
         imageNews.snp.makeConstraints { make in
             make.top.equalTo(self)
             make.left.equalTo(self).offset(15)

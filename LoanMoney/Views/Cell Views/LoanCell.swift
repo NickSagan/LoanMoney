@@ -107,17 +107,6 @@ class LoanCell: UICollectionViewCell {
         background.addSubview(underYellow)
         background.addSubview(separator)
         
-        background.translatesAutoresizingMaskIntoConstraints = false
-        logo.translatesAutoresizingMaskIntoConstraints = false
-        percent.translatesAutoresizingMaskIntoConstraints = false
-        blueIcon.translatesAutoresizingMaskIntoConstraints = false
-        violetIcon.translatesAutoresizingMaskIntoConstraints = false
-        yellowIcon.translatesAutoresizingMaskIntoConstraints = false
-        underBlue.translatesAutoresizingMaskIntoConstraints = false
-        underViolet.translatesAutoresizingMaskIntoConstraints = false
-        underYellow.translatesAutoresizingMaskIntoConstraints = false
-        separator.translatesAutoresizingMaskIntoConstraints = false
-        
         background.snp.makeConstraints { make in
             make.top.equalTo(self)
             make.left.equalTo(self)
