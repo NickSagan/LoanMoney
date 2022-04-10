@@ -18,7 +18,7 @@ class CalcVC: UIViewController {
         title = "Калькулятор"
         calculatorView = CalculatorView()
         view.addSubview(calculatorView)
-        calculatorView.translatesAutoresizingMaskIntoConstraints = false
+
         calculatorView.snp.makeConstraints { make in
             make.top.equalTo(view.snp.top)
             make.bottom.equalTo(view.snp.bottom)
@@ -27,7 +27,6 @@ class CalcVC: UIViewController {
         }
         calculatorView.yellowButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
-        // Tap recognizer to dismiss keyboard
         let tapGestureReconizer = UITapGestureRecognizer(target: self, action: #selector(tap))
         tapGestureReconizer.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGestureReconizer)
@@ -54,12 +53,9 @@ class CalcVC: UIViewController {
     }
     
     @objc func buttonTapped() {
-//        let vc = LoansVC()
-//        navigationController?.pushViewController(vc, animated: true)
         tabBarController?.selectedIndex = 0
     }
     
-    // Dismiss keyboard
     @objc private func tap(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }

@@ -16,7 +16,6 @@ import UIKit
 
 class NewsVC: UIViewController {
 
-    private var refreshControl: UIRefreshControl!
     private var collectionView: UICollectionView!
 
     override func viewDidLoad() {
@@ -41,9 +40,8 @@ extension NewsVC {
         collectionView?.register(NewsCell.self, forCellWithReuseIdentifier: "cell")
         collectionView?.backgroundColor = UIColor.white
         
-        refreshControl = UIRefreshControl()
-        collectionView?.refreshControl = refreshControl
-        refreshControl?.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        collectionView?.refreshControl = UIRefreshControl()
+        collectionView?.refreshControl?.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         
         view.addSubview(collectionView!)
         self.view = view
@@ -59,7 +57,7 @@ extension NewsVC {
     
     @objc func refresh(_ sender: AnyObject) {
         usleep(UInt32(0.5))
-        refreshControl.endRefreshing()
+        collectionView?.refreshControl?.endRefreshing()
     }
 }
 
