@@ -22,7 +22,7 @@ class TabBarVC: UIViewController {
         vc2.title = "Карты"
         vc3.title = "Калькулятор"
         vc4.title = "Информация"
-        
+        // TODO Delete Loans and Cards
         tabBarVC.setViewControllers([vc1, vc2, vc3, vc4], animated: false)
         
         let icons = ["loans", "cards", "calc", "info"]
