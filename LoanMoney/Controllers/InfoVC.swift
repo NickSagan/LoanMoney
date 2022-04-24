@@ -47,7 +47,7 @@ class InfoVC: UIViewController {
             return item
         }()
         
-        navigationItem.setRightBarButton(item, animated: true)
+//        navigationItem.setRightBarButton(item, animated: true)
     }
     
     @objc func sideMenuButton() {

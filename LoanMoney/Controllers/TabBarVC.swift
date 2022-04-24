@@ -13,14 +13,14 @@ class TabBarVC: UIViewController {
         super.viewDidLoad()
         let tabBarVC = UITabBarController()
         
-        let vc1 = UINavigationController(rootViewController: LoansVC())
-        let vc2 = UINavigationController(rootViewController: CardFilterVC())
-        let vc3 = UINavigationController(rootViewController: CalcVC())
+        let vc1 = UINavigationController(rootViewController: DebtBookVC())
+        let vc2 = UINavigationController(rootViewController: NewDebtVC())
+        let vc3 = UINavigationController(rootViewController: NewsVC())
         let vc4 = UINavigationController(rootViewController: InfoVC())
         
-        vc1.title = "Займы"
-        vc2.title = "Карты"
-        vc3.title = "Калькулятор"
+        vc1.title = "Долговая книга"
+        vc2.title = "Добавить долг"
+        vc3.title = "Новости"
         vc4.title = "Информация"
         // TODO Delete Loans and Cards
         tabBarVC.setViewControllers([vc1, vc2, vc3, vc4], animated: false)
